@@ -224,7 +224,7 @@ a{ color:inherit; }
 }
 
 /* ===== CONTENITORE CENTRATO (contenuto entro 1180px, sfondi a tutta larghezza) ===== */
-.hero, .manifesto, .doing, .vertenze, .guide, .storie, .documenti, .canali, .segnala, .foot{
+.blog-hero, .hero, .manifesto, .doing, .vertenze, .guide, .storie, .documenti, .canali, .segnala, .foot{
   padding-left: max(28px, calc((100% - 1180px) / 2));
   padding-right: max(28px, calc((100% - 1180px) / 2));
 }
@@ -238,3 +238,13 @@ a{ color:inherit; }
 .post-pdf{ display:inline-block; font-family:var(--mono); font-weight:700; font-size:13px; letter-spacing:.06em; text-decoration:none; background:var(--ink); color:var(--paper); padding:13px 22px; margin:24px 0 40px; }
 .post-pdf:hover{ background:var(--rosso); }
 .post .back{ display:block; font-family:var(--mono); font-size:14px; color:var(--rosso); text-decoration:none; border-top:2px solid var(--ink); padding-top:22px; }
+
+/* ===== BLOG: anteprima homepage + pagina blog ===== */
+.blog-home .label{ margin-bottom:10px; }
+.blog-home h2{ font-size:clamp(40px,7vw,64px); margin-bottom:8px; }
+.blog-all-btn{ display:inline-block; margin-top:34px; font-family:var(--mono); font-weight:700; font-size:15px; letter-spacing:.06em; text-decoration:none; background:var(--ink); color:var(--paper); padding:16px 30px; transition:background .12s ease,transform .1s ease; }
+.blog-all-btn:hover{ background:var(--rosso); transform:translateY(-2px); }
+.blog-hero{ background:transparent; padding-top:60px; padding-bottom:26px; }
+.blog-hero .label{ margin-bottom:14px; }
+.blog-hero h1{ font-family:var(--disp); text-transform:uppercase; font-size:clamp(40px,9vw,84px); line-height:.95; letter-spacing:-.02em; }
+.blog-lead{ font-size:19px; max-width:640px; color:#333; margin-top:18px; }
