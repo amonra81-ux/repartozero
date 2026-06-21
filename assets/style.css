@@ -167,13 +167,14 @@ a{ color:inherit; }
 .documenti h2{ font-size:clamp(34px,6vw,56px); }
 .doc-cat{ font-family:var(--mono); font-weight:700; text-transform:uppercase; font-size:14px; letter-spacing:.12em; color:var(--rosso); margin:40px 0 16px; padding-bottom:8px; border-bottom:2px solid var(--ink); }
 .doc-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
-.doc{ display:flex; flex-direction:column; gap:8px; background:#fff; border:2px solid var(--ink); padding:20px; text-decoration:none; position:relative; transition:transform .1s ease,background .12s ease,color .12s ease; }
+.doc{ display:flex; flex-direction:column; gap:10px; min-height:180px; background:#fff; border:2px solid var(--ink); padding:22px; text-decoration:none; transition:transform .1s ease,background .12s ease,color .12s ease; }
 .doc:hover{ transform:translateY(-3px); background:var(--ink); color:var(--paper); }
 .doc-date{ font-family:var(--mono); font-size:11px; letter-spacing:.12em; color:var(--rosso); }
-.doc b{ font-family:var(--disp); font-size:17px; line-height:1.05; text-transform:uppercase; }
-.doc-desc{ font-size:14px; color:#555; }
+.doc b{ font-family:var(--disp); font-size:16px; line-height:1.1; text-transform:uppercase; }
+.doc-desc{ font-size:14px; line-height:1.45; color:#555; }
 .doc:hover .doc-desc{ color:#bbb; }
-.doc i{ font-family:var(--mono); font-style:normal; font-size:13px; font-weight:700; color:var(--rosso); margin-top:4px; }
+.doc i{ font-family:var(--mono); font-style:normal; font-size:13px; font-weight:700; color:var(--rosso); margin-top:auto; padding-top:8px; }
+.doc:hover i{ color:var(--giallo); }
 
 /* ===== CANALI ===== */
 .canali{ background:#fff; }
@@ -221,3 +222,19 @@ a{ color:inherit; }
   .burger{ display:block; margin-left:auto; }
   .nav.open{ display:flex; position:absolute; top:100%; left:0; right:0; flex-direction:column; background:var(--ink); padding:18px 28px; gap:16px; }
 }
+
+/* ===== CONTENITORE CENTRATO (contenuto entro 1180px, sfondi a tutta larghezza) ===== */
+.hero, .manifesto, .doing, .vertenze, .guide, .storie, .documenti, .canali, .segnala, .foot{
+  padding-left: max(28px, calc((100% - 1180px) / 2));
+  padding-right: max(28px, calc((100% - 1180px) / 2));
+}
+
+/* ===== PAGINA ARTICOLO (blog) ===== */
+.post{ max-width:720px; margin:0 auto; padding:56px 24px 40px; }
+.post-meta{ font-family:var(--mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--rosso); margin-bottom:14px; }
+.post h1{ font-family:var(--disp); text-transform:uppercase; font-size:clamp(30px,5vw,46px); line-height:1.02; letter-spacing:-.01em; margin-bottom:30px; }
+.post-body{ font-size:18px; line-height:1.7; color:#1d1d1d; }
+.post-body p{ margin:0 0 20px; }
+.post-pdf{ display:inline-block; font-family:var(--mono); font-weight:700; font-size:13px; letter-spacing:.06em; text-decoration:none; background:var(--ink); color:var(--paper); padding:13px 22px; margin:24px 0 40px; }
+.post-pdf:hover{ background:var(--rosso); }
+.post .back{ display:block; font-family:var(--mono); font-size:14px; color:var(--rosso); text-decoration:none; border-top:2px solid var(--ink); padding-top:22px; }
