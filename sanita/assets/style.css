@@ -14,7 +14,7 @@
 
   --maxw:1760px;
   --h-top:60px;               /* altezza intestazione */
-  --radius:2px;
+  --radius:0;
   --t:200ms cubic-bezier(.2,.6,.3,1);
 }
 
@@ -136,7 +136,7 @@ mark{background:#FFE9A8; color:#14161A; padding:0 2px}
 .conteggio .dentro{color:var(--ink-2)}
 
 /* ---------- SCHEDE ---------- */
-.grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); gap:var(--sp-4)}
+.grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr)); gap:var(--sp-4)}
 .card{background:var(--paper-2); border:1px solid var(--line); border-radius:var(--radius);
   padding:0; text-align:left; display:flex; flex-direction:column; overflow:hidden; width:100%;
   transition:transform var(--t), box-shadow var(--t), border-color var(--t);
@@ -154,7 +154,7 @@ mark{background:#FFE9A8; color:#14161A; padding:0 2px}
 .badge.volantino{background:var(--red); color:var(--on-red)}
 .badge.opuscolo{background:#0B4F6C; color:#fff}
 .badge.iniziativa{background:#7A5C00; color:#fff}
-.pagebadge{position:absolute; bottom:8px; right:8px; z-index:2; font-family:'Space Mono',monospace;
+.pagebadge{position:absolute; top:8px; right:8px; z-index:2; font-family:'Space Mono',monospace;
   font-size:9.5px; background:rgba(20,22,26,.82); color:#fff; padding:3px 6px; border-radius:2px}
 .card .meta{padding:10px 10px var(--sp-3); display:flex; flex-direction:column; gap:4px; flex:1}
 .card .meta:has(.data:first-child){flex-direction:row; align-items:baseline;
@@ -168,43 +168,28 @@ mark{background:#FFE9A8; color:#14161A; padding:0 2px}
 .card .data{font-family:'Space Mono',monospace; font-size:11px; color:var(--ink-3); letter-spacing:.06em}
 .card .data .q{color:var(--red); font-weight:700}
 .card .cassetto{font-size:11px; color:var(--ink-3); text-transform:uppercase; letter-spacing:.06em}
-.estratto{font-size:12px; line-height:1.4; color:var(--ink-2); border-top:1px dashed var(--line);
-  padding-top:6px; margin-top:2px}
+.estratto{font-size:12px; line-height:1.35; color:var(--ink-2); border-top:1px dashed var(--line);
+  padding-top:6px; margin-top:2px; height:52px; overflow:hidden;
+  display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical}
 .estratto b{font-family:'Space Mono',monospace; font-size:9.5px; letter-spacing:.1em;
   text-transform:uppercase; color:var(--red); display:block; margin-bottom:3px}
 
 /* ---------- COPERTINE ----------
-   58 documenti su 62 sono fogli di testo: da lontano tutti uguali.
-   L'anteprima vera resta visibile; sopra ci va una fascia col colore del
-   tema, l'icona e il titolo. Passandoci sopra la fascia si alza. */
-.cop{position:absolute; inset:0; color:#fff; overflow:hidden;
-  display:flex; flex-direction:column; justify-content:flex-end;
-  padding:var(--sp-3) var(--sp-3) 44px;   /* in basso resta libero il contatore pagine */
-  background:
-    linear-gradient(to bottom,
-      transparent 0%, transparent 26%,
-      color-mix(in srgb, var(--cop) 88%, transparent) 46%,
-      var(--cop) 58%, var(--cop) 100%),
-    linear-gradient(color-mix(in srgb, var(--cop) 18%, transparent),
-                    color-mix(in srgb, var(--cop) 18%, transparent));
-  transition:opacity var(--t)}
-.cop-icona{position:absolute; right:-10%; top:2%; width:56%; height:auto;
-  opacity:.26; color:#fff; stroke-width:1.2}
-.cop-testo{position:relative; z-index:1; font-family:'Archivo Black',sans-serif;
-  font-size:clamp(14px,1.15vw,20px); line-height:1.06; letter-spacing:-.025em;
-  text-transform:uppercase;
-  /* le parole lunghe si spezzano invece di uscire dalla copertina */
-  overflow-wrap:anywhere; hyphens:auto;
-  display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;
-  text-shadow:0 1px 10px rgba(0,0,0,.28)}
-.cop-tema{position:relative; z-index:1; margin-top:8px; font-family:'Space Mono',monospace;
-  font-size:9.5px; letter-spacing:.1em; text-transform:uppercase; opacity:.85;
-  border-top:1px solid rgba(255,255,255,.38); padding-top:7px;
+   L'anteprima della pagina si vede sempre. Sotto, una fascia piena col
+   colore del tema: bordo netto, niente sfumature. */
+.cop{position:absolute; left:0; right:0; bottom:0; color:#fff; background:var(--cop);
+  padding:9px 10px 11px; border-top:3px solid rgba(0,0,0,.28)}
+.cop-riga{display:flex; align-items:center; gap:6px; margin-bottom:5px}
+.cop-icona{width:15px; height:15px; flex:none; color:#fff; opacity:.9; stroke-width:2}
+.cop-tema{font-family:'Space Mono',monospace; font-size:9.5px; letter-spacing:.1em;
+  text-transform:uppercase; opacity:.9;
   white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
-/* l'anteprima della pagina sta sotto e si vede sempre */
+.cop-testo{display:block; font-family:'Archivo Black',sans-serif;
+  font-size:clamp(14px,1.05vw,18px); line-height:1.08; letter-spacing:-.025em;
+  text-transform:uppercase; overflow-wrap:anywhere; hyphens:auto;
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden}
 .cop-pagina{position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
   object-position:top center}
-.card:hover .cop{opacity:0}
 
 /* ---------- MOSTRA ALTRI / VUOTO ---------- */
 .fine-elenco{padding:var(--sp-5) 0 var(--sp-8); text-align:center}
@@ -434,8 +419,8 @@ footer.site a{color:var(--paper)}
 
   /* due copertine per riga, titolo leggibile */
   .grid{grid-template-columns:1fr 1fr; gap:var(--sp-3)}
-  .cop{padding:var(--sp-2) var(--sp-2) 40px}
-  .cop-testo{font-size:15px}
+  .cop{padding:8px}
+  .cop-testo{font-size:14.5px}
   .card .meta{padding:8px}
 
   .fine-elenco{padding:var(--sp-4) 0 var(--sp-6)}

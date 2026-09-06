@@ -32,7 +32,7 @@ const stato = { settore: '', comparto: '', tipo: '', tema: '', q: '',
 
 // i dati cambiano insieme al codice: la versione evita che il browser
 // serva un archivio vecchio tenuto in cache
-const VERSIONE = '10';
+const VERSIONE = '11';
 
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -274,17 +274,15 @@ function aggiornaScheda(el, d) {
 function copertina(d) {
   const st = STILI[d.stile] || STILI._neutro || { colore: '#2B2F36', icona: 'file-text' };
   const icona = ICONE[st.icona] || '';
-  // 4 documenti su 62 hanno una prima pagina disegnata: quella si tiene com'è
-  if (d.copertina === 'pagina') {
-    return `<img src="${d.thumb}" alt="Prima pagina di: ${esc(d.titolo)}" loading="lazy" decoding="async">`;
-  }
   return `
     <img class="cop-pagina" src="${d.thumb}" alt="Prima pagina di: ${esc(d.titolo)}" loading="lazy" decoding="async">
     <span class="cop" style="--cop:${st.colore}">
-      <svg class="cop-icona" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-           stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${icona}</svg>
+      <span class="cop-riga">
+        <svg class="cop-icona" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${icona}</svg>
+        <span class="cop-tema">${esc(st.breve || d.stile)}</span>
+      </span>
       <span class="cop-testo">${esc(d.etichetta)}</span>
-      <span class="cop-tema">${esc(st.breve || d.stile)}</span>
     </span>`;
 }
 
@@ -296,7 +294,6 @@ function scheda(d) {
       ${copertina(d)}
     </span>
     <span class="meta">
-      ${d.copertina === 'pagina' ? `<span class="etichetta">${esc(d.etichetta)}</span>` : ''}
       <span class="data">${dataBreve(d)}</span>
       ${d._dove === 'testo'
         ? `<span class="estratto"><b>nel testo</b> ${estratto(d.slug, stato.q)}</span>`
