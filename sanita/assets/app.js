@@ -131,18 +131,15 @@ function riempiTendina(sel, chiave, mappa, etichettaTutti) {
   });
 }
 
-// i temi stanno in una tendina: i più usati in cima, poi tutti in ordine alfabetico
+// dodici temi, elencati una volta sola, dal più al meno documentato
 function riempiTemi() {
   const conta = {};
-  DATI.forEach(d => d.tag.forEach(t => conta[t] = (conta[t] || 0) + 1));
-  const perUso = Object.entries(conta).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
-  const alfabetico = [...perUso].sort((a, b) => a[0].localeCompare(b[0], 'it'));
-  const opt = ([t, n]) => `<option value="${esc(t)}">${esc(t)} (${n})</option>`;
+  DATI.forEach(d => (d.temi || []).forEach(t => conta[t] = (conta[t] || 0) + 1));
+  const ordinati = Object.entries(conta).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'it'));
 
   $('#f-tema').innerHTML =
-    `<option value="">Tutti i temi (${perUso.length})</option>` +
-    `<optgroup label="I più ricorrenti">${perUso.slice(0, 8).map(opt).join('')}</optgroup>` +
-    `<optgroup label="Tutti, in ordine alfabetico">${alfabetico.map(opt).join('')}</optgroup>`;
+    `<option value="">Tutti i temi</option>` +
+    ordinati.map(([t, n]) => `<option value="${esc(t)}">${esc(t)} (${n})</option>`).join('');
 
   $('#f-tema').addEventListener('change', e => { stato.tema = e.target.value; ripristinaPasso(); rendi(); });
 }
@@ -150,7 +147,7 @@ function riempiTemi() {
 /* ---------- ricerca ---------- */
 function trova(d, q) {
   const scheda = senzaAccenti([d.titolo, d.etichetta, d.hook, d.tag.join(' '),
-    (d.luoghi || []).join(' '), d.data].join(' '));
+    (d.temi || []).join(' '), (d.luoghi || []).join(' '), d.data].join(' '));
   if (scheda.includes(q)) return 'scheda';
   if (TESTI && TESTI[d.slug] && TESTI[d.slug].includes(q)) return 'testo';
   return null;
@@ -170,14 +167,14 @@ function rendi() {
     if (stato.settore && d.settore !== stato.settore) return false;
     if (stato.comparto && d.comparto !== stato.comparto) return false;
     if (stato.tipo && d.tipo !== stato.tipo) return false;
-    if (stato.tema && !d.tag.includes(stato.tema)) return false;
+    if (stato.tema && !(d.temi || []).includes(stato.tema)) return false;
     if (stato.q) { d._dove = trova(d, stato.q); if (!d._dove) return false; }
     else d._dove = null;
     return true;
   }).sort((a, b) => stato.ordine === 'desc' ? b.data.localeCompare(a.data) : a.data.localeCompare(b.data));
 
   const filtrato = !!(stato.settore || stato.comparto || stato.tipo || stato.tema || stato.q);
-  $('#azzera').hidden = !filtrato;
+  $('#azzera').disabled = !filtrato;
 
   const nelTesto = stato.q ? vista.filter(d => d._dove === 'testo').length : 0;
   const visti = Math.min(mostrati, vista.length);
@@ -270,7 +267,7 @@ function apri(i) {
   $('#m-title').textContent = d.titolo;
   $('#m-hook').textContent = d.hook;
   $('#m-tags').innerHTML =
-    d.tag.map(t => `<button class="tag" data-tema="${esc(t)}">${esc(t)}</button>`).join('') +
+    (d.temi || []).map(t => `<button class="tag" data-tema="${esc(t)}">${esc(t)}</button>`).join('') +
     (d.luoghi || []).map(l => `<button class="tag luogo" data-luogo="${esc(l)}">${esc(l)}</button>`).join('');
   $('#m-dl').href = d.pdf;
   $('#m-dl').setAttribute('download', d.slug + '.pdf');

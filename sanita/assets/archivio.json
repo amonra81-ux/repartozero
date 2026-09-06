@@ -22,6 +22,9 @@
    "parole": 262,
    "luoghi": [
     "milano"
+   ],
+   "temi": [
+    "Repressione e licenziamenti"
    ]
   },
   {
@@ -48,6 +51,10 @@
    "luoghi": [
     "bologna",
     "milano"
+   ],
+   "temi": [
+    "Repressione e licenziamenti",
+    "Rappresentanza e RSU"
    ]
   },
   {
@@ -73,6 +80,9 @@
    "parole": 1044,
    "luoghi": [
     "sedriano"
+   ],
+   "temi": [
+    "Salute e sicurezza sul lavoro"
    ]
   },
   {
@@ -98,6 +108,9 @@
    "parole": 838,
    "luoghi": [
     "milano"
+   ],
+   "temi": [
+    "Salute e sicurezza sul lavoro"
    ]
   },
   {
@@ -122,6 +135,10 @@
    "parole": 446,
    "luoghi": [
     "milano"
+   ],
+   "temi": [
+    "Repressione e licenziamenti",
+    "Organici e carichi di lavoro"
    ]
   },
   {
@@ -152,6 +169,9 @@
     "milano",
     "puglia",
     "sicilia"
+   ],
+   "temi": [
+    "Privatizzazione e profitto"
    ]
   },
   {
@@ -177,6 +197,10 @@
    "parole": 611,
    "luoghi": [
     "milano"
+   ],
+   "temi": [
+    "Privatizzazione e profitto",
+    "Diritto alla salute"
    ]
   },
   {
@@ -201,6 +225,9 @@
    "parole": 1504,
    "luoghi": [
     "genova"
+   ],
+   "temi": [
+    "Rappresentanza e RSU"
    ]
   },
   {
@@ -229,6 +256,10 @@
     "milano",
     "roma",
     "torino"
+   ],
+   "temi": [
+    "Salute e sicurezza sul lavoro",
+    "Organici e carichi di lavoro"
    ]
   },
   {
@@ -251,7 +282,11 @@
    "ente": "",
    "scansione": false,
    "parole": 308,
-   "luoghi": []
+   "luoghi": [],
+   "temi": [
+    "Salute e sicurezza sul lavoro",
+    "Professionalità e formazione"
+   ]
   },
   {
    "slug": "mmg-legacoop",
@@ -277,6 +312,9 @@
     "genova",
     "milano",
     "roma"
+   ],
+   "temi": [
+    "Privatizzazione e profitto"
    ]
   },
   {
@@ -302,6 +340,10 @@
    "parole": 392,
    "luoghi": [
     "genova"
+   ],
+   "temi": [
+    "Lotte, scioperi, vertenze",
+    "Salario e contratto"
    ]
   },
   {
@@ -327,6 +369,9 @@
    "parole": 423,
    "luoghi": [
     "liguria"
+   ],
+   "temi": [
+    "Diritto alla salute"
    ]
   },
   {
@@ -351,6 +396,9 @@
    "parole": 789,
    "luoghi": [
     "milano"
+   ],
+   "temi": [
+    "Privatizzazione e profitto"
    ]
   },
   {
@@ -377,6 +425,10 @@
    "luoghi": [
     "lombardia",
     "milano"
+   ],
+   "temi": [
+    "Privatizzazione e profitto",
+    "Diritto alla salute"
    ]
   },
   {
@@ -402,6 +454,11 @@
    "parole": 478,
    "luoghi": [
     "milano"
+   ],
+   "temi": [
+    "Repressione e licenziamenti",
+    "Lotte, scioperi, vertenze",
+    "Privatizzazione e profitto"
    ]
   },
   {
@@ -427,6 +484,10 @@
    "parole": 366,
    "luoghi": [
     "genova"
+   ],
+   "temi": [
+    "Lotte, scioperi, vertenze",
+    "Salario e contratto"
    ]
   },
   {
@@ -452,6 +513,10 @@
    "parole": 331,
    "luoghi": [
     "genova"
+   ],
+   "temi": [
+    "Lotte, scioperi, vertenze",
+    "Salario e contratto"
    ]
   },
   {
@@ -477,6 +542,10 @@
    "parole": 403,
    "luoghi": [
     "genova"
+   ],
+   "temi": [
+    "Lotte, scioperi, vertenze",
+    "Salario e contratto"
    ]
   },
   {
@@ -502,6 +571,10 @@
    "parole": 347,
    "luoghi": [
     "genova"
+   ],
+   "temi": [
+    "Lotte, scioperi, vertenze",
+    "Salario e contratto"
    ]
   },
   {
@@ -527,6 +600,10 @@
    "luoghi": [
     "milano",
     "roma"
+   ],
+   "temi": [
+    "Rappresentanza e RSU",
+    "Privatizzazione e profitto"
    ]
   },
   {
@@ -553,6 +630,9 @@
    "luoghi": [
     "como",
     "milano"
+   ],
+   "temi": [
+    "Privatizzazione e profitto"
    ]
   },
   {
@@ -577,6 +657,10 @@
    "parole": 579,
    "luoghi": [
     "milano"
+   ],
+   "temi": [
+    "Privatizzazione e profitto",
+    "Diritto alla salute"
    ]
   },
   {
@@ -601,6 +685,10 @@
    "parole": 278,
    "luoghi": [
     "genova"
+   ],
+   "temi": [
+    "Professionalità e formazione",
+    "Organici e carichi di lavoro"
    ]
   },
   {
@@ -625,6 +713,9 @@
    "parole": 486,
    "luoghi": [
     "milano"
+   ],
+   "temi": [
+    "Salario e contratto"
    ]
   },
   {
@@ -648,7 +739,10 @@
    "ente": "",
    "scansione": false,
    "parole": 514,
-   "luoghi": []
+   "luoghi": [],
+   "temi": [
+    "Salario e contratto"
+   ]
   },
   {
    "slug": "incontro-pubblico-impiego-22-ottobre",
@@ -673,6 +767,9 @@
    "luoghi": [
     "milano",
     "roma"
+   ],
+   "temi": [
+    "Rappresentanza e RSU"
    ]
   },
   {
@@ -699,6 +796,10 @@
    "luoghi": [
     "genova",
     "milano"
+   ],
+   "temi": [
+    "Organici e carichi di lavoro",
+    "Diritto alla salute"
    ]
   },
   {
@@ -723,6 +824,10 @@
    "parole": 343,
    "luoghi": [
     "milano"
+   ],
+   "temi": [
+    "Guerra",
+    "Privatizzazione e profitto"
    ]
   },
   {
@@ -751,6 +856,10 @@
     "emilia",
     "lombardia",
     "milano"
+   ],
+   "temi": [
+    "Salario e contratto",
+    "Rappresentanza e RSU"
    ]
   },
   {
@@ -775,6 +884,9 @@
    "parole": 299,
    "luoghi": [
     "milano"
+   ],
+   "temi": [
+    "Privatizzazione e profitto"
    ]
   },
   {
@@ -800,6 +912,9 @@
    "parole": 230,
    "luoghi": [
     "genova"
+   ],
+   "temi": [
+    "Rappresentanza e RSU"
    ]
   },
   {
@@ -826,6 +941,9 @@
     "como",
     "emilia",
     "milano"
+   ],
+   "temi": [
+    "Salario e contratto"
    ]
   },
   {
@@ -852,6 +970,10 @@
    "luoghi": [
     "calabria",
     "genova"
+   ],
+   "temi": [
+    "Privatizzazione e profitto",
+    "Salute e sicurezza sul lavoro"
    ]
   },
   {
@@ -874,7 +996,10 @@
    "ente": "",
    "scansione": false,
    "parole": 692,
-   "luoghi": []
+   "luoghi": [],
+   "temi": [
+    "Privatizzazione e profitto"
+   ]
   },
   {
    "slug": "sistema-sanitario-inglese",
@@ -896,7 +1021,11 @@
    "ente": "",
    "scansione": false,
    "parole": 998,
-   "luoghi": []
+   "luoghi": [],
+   "temi": [
+    "Come funziona altrove",
+    "Privatizzazione e profitto"
+   ]
   },
   {
    "slug": "sistema-sanitario-spagnolo",
@@ -922,6 +1051,10 @@
     "genova",
     "lombardia",
     "milano"
+   ],
+   "temi": [
+    "Come funziona altrove",
+    "Privatizzazione e profitto"
    ]
   },
   {
@@ -946,6 +1079,9 @@
    "parole": 373,
    "luoghi": [
     "genova"
+   ],
+   "temi": [
+    "Salario e contratto"
    ]
   },
   {
@@ -971,6 +1107,9 @@
    "parole": 483,
    "luoghi": [
     "milano"
+   ],
+   "temi": [
+    "Organici e carichi di lavoro"
    ]
   },
   {
@@ -997,6 +1136,10 @@
    "luoghi": [
     "como",
     "genova"
+   ],
+   "temi": [
+    "Pandemia",
+    "Lotte, scioperi, vertenze"
    ]
   },
   {
@@ -1021,6 +1164,9 @@
    "parole": 402,
    "luoghi": [
     "milano"
+   ],
+   "temi": [
+    "Salario e contratto"
    ]
   },
   {
@@ -1045,6 +1191,9 @@
    "parole": 596,
    "luoghi": [
     "genova"
+   ],
+   "temi": [
+    "Organici e carichi di lavoro"
    ]
   },
   {
@@ -1070,6 +1219,9 @@
    "parole": 619,
    "luoghi": [
     "genova"
+   ],
+   "temi": [
+    "Pandemia"
    ]
   },
   {
@@ -1095,6 +1247,10 @@
    "parole": 347,
    "luoghi": [
     "genova"
+   ],
+   "temi": [
+    "Pandemia",
+    "Repressione e licenziamenti"
    ]
   },
   {
@@ -1118,7 +1274,10 @@
    "ente": "",
    "scansione": false,
    "parole": 349,
-   "luoghi": []
+   "luoghi": [],
+   "temi": [
+    "Salute e sicurezza sul lavoro"
+   ]
   },
   {
    "slug": "obbligo-vaccinale-difesa",
@@ -1142,6 +1301,10 @@
    "parole": 241,
    "luoghi": [
     "genova"
+   ],
+   "temi": [
+    "Pandemia",
+    "Repressione e licenziamenti"
    ]
   },
   {
@@ -1166,6 +1329,9 @@
    "parole": 582,
    "luoghi": [
     "genova"
+   ],
+   "temi": [
+    "Salario e contratto"
    ]
   },
   {
@@ -1191,6 +1357,9 @@
    "luoghi": [
     "genova",
     "milano"
+   ],
+   "temi": [
+    "Pandemia"
    ]
   },
   {
@@ -1216,6 +1385,10 @@
    "luoghi": [
     "genova",
     "milano"
+   ],
+   "temi": [
+    "Pandemia",
+    "Diritto alla salute"
    ]
   },
   {
@@ -1241,6 +1414,9 @@
    "parole": 483,
    "luoghi": [
     "milano"
+   ],
+   "temi": [
+    "Privatizzazione e profitto"
    ]
   },
   {
@@ -1267,6 +1443,11 @@
    "luoghi": [
     "genova",
     "milano"
+   ],
+   "temi": [
+    "Lotte, scioperi, vertenze",
+    "Pandemia",
+    "Organici e carichi di lavoro"
    ]
   },
   {
@@ -1289,7 +1470,10 @@
    "ente": "",
    "scansione": false,
    "parole": 325,
-   "luoghi": []
+   "luoghi": [],
+   "temi": [
+    "Rappresentanza e RSU"
+   ]
   },
   {
    "slug": "agitazione-san-raffaele-2020",
@@ -1316,6 +1500,11 @@
    "parole": 299,
    "luoghi": [
     "milano"
+   ],
+   "temi": [
+    "Lotte, scioperi, vertenze",
+    "Privatizzazione e profitto",
+    "Salario e contratto"
    ]
   },
   {
@@ -1341,6 +1530,10 @@
    "parole": 503,
    "luoghi": [
     "milano"
+   ],
+   "temi": [
+    "Pandemia",
+    "Salute e sicurezza sul lavoro"
    ]
   },
   {
@@ -1374,6 +1567,9 @@
     "piemonte",
     "roma",
     "veneto"
+   ],
+   "temi": [
+    "Privatizzazione e profitto"
    ]
   },
   {
@@ -1400,6 +1596,10 @@
    "luoghi": [
     "genova",
     "milano"
+   ],
+   "temi": [
+    "Repressione e licenziamenti",
+    "Lotte, scioperi, vertenze"
    ]
   },
   {
@@ -1426,6 +1626,9 @@
     "genova",
     "milano",
     "roma"
+   ],
+   "temi": [
+    "Privatizzazione e profitto"
    ]
   },
   {
@@ -1451,6 +1654,9 @@
    "parole": 417,
    "luoghi": [
     "genova"
+   ],
+   "temi": [
+    "Professionalità e formazione"
    ]
   },
   {
@@ -1476,6 +1682,10 @@
    "parole": 336,
    "luoghi": [
     "genova"
+   ],
+   "temi": [
+    "Professionalità e formazione",
+    "Salario e contratto"
    ]
   },
   {
@@ -1501,6 +1711,10 @@
    "parole": 445,
    "luoghi": [
     "genova"
+   ],
+   "temi": [
+    "Professionalità e formazione",
+    "Salario e contratto"
    ]
   },
   {
@@ -1528,6 +1742,9 @@
     "genova",
     "lombardia",
     "milano"
+   ],
+   "temi": [
+    "Privatizzazione e profitto"
    ]
   }
  ],

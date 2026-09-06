@@ -115,8 +115,11 @@ mark{background:#FFE9A8; color:#14161A; padding:0 2px}
 .tendina select:hover{border-color:var(--ink)}
 .tendina select:focus{border-color:var(--red); outline:none}
 .azzera{background:var(--red); color:var(--on-red); border:0; min-height:44px;
-  padding:10px 18px; font-weight:700; font-size:14px; border-radius:var(--radius)}
-.azzera:hover{background:var(--red-dark)}
+  padding:10px 18px; font-weight:700; font-size:14px; border-radius:var(--radius);
+  transition:opacity var(--t), background var(--t)}
+.azzera:hover:not(:disabled){background:var(--red-dark)}
+.azzera:disabled{background:transparent; color:var(--ink-3);
+  border:1.5px solid var(--line); cursor:default}
 
 /* ---------- TESTATE DI SEZIONE ---------- */
 .testata-sezione{display:flex; align-items:baseline; gap:var(--sp-4); flex-wrap:wrap;
