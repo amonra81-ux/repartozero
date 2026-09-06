@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sanità e Pubblico Impiego — Archivio S.I. Cobas</title>
+<meta name="description" content="Archivio dei volantini, comunicati e opuscoli del S.I. Cobas su sanità pubblica, privata e cooperative sociali. Materiale in ordine cronologico, consultabile e scaricabile.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/style.css?v=202609061319">
+</head>
+<body id="top">
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top">S.I. COBAS<br><b>SANITÀ E PUBBLICO IMPIEGO</b></a>
+    <nav class="topnav">
+      <a href="#imbuto">Come si legge</a>
+      <a href="#archivio">Archivio</a>
+      <a href="#enti">Ospedali ed enti</a>
+      <a href="#modello">Il modello</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <p class="kicker">Archivio di settore · aggiornato al 2026</p>
+    <h1>La salute non è <em>una merce</em>.</h1>
+    <p class="lead">
+      Vent'anni di volantini, comunicati e opuscoli sulla sanità pubblica, privata e delle
+      cooperative sociali. Non è un magazzino: è materiale da usare. Si entra da un volantino —
+      un concetto, una pagina — e si arriva all'analisi. Tutto scaricabile, tutto condivisibile.
+    </p>
+    <div class="stats">
+      <div class="stat"><b id="stat-tot">—</b><span>documenti</span></div>
+      <div class="stat"><b id="stat-anni">—</b><span>anni coperti</span></div>
+      <div class="stat"><b id="stat-vol">—</b><span>volantini</span></div>
+      <div class="stat"><b id="stat-op">—</b><span>opuscoli</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ IMBUTO ============ -->
+<section class="funnel" id="imbuto">
+  <div class="wrap">
+    <h2 class="sec-title">Come si legge questo archivio — dal gancio all'analisi</h2>
+    <div class="funnel-grid">
+      <button class="fcard" data-funnel="volantino" aria-pressed="false">
+        <span class="step">1 · Ingresso</span>
+        <h3>Volantino</h3>
+        <p>Una pagina, un concetto solo. Serve a fermare chi passa: la questione immediata,
+           detta in modo che si capisca al primo colpo.</p>
+        <span class="n" data-count="volantino"></span>
+      </button>
+      <button class="fcard" data-funnel="comunicato" aria-pressed="false">
+        <span class="step">2 · Il fatto</span>
+        <h3>Comunicato e vertenza</h3>
+        <p>Cosa è successo, dove, con quali documenti. La presa di posizione su un caso
+           concreto: un reparto, una sentenza, un licenziamento.</p>
+        <span class="n" data-count="comunicato"></span>
+      </button>
+      <button class="fcard" data-funnel="opuscolo" aria-pressed="false">
+        <span class="step">3 · Fondo dell'imbuto</span>
+        <h3>Opuscolo</h3>
+        <p>Più pagine, più tempo. La riflessione ad ampio raggio per chi ha già capito
+           che il problema non è il singolo turno.</p>
+        <span class="n" data-count="opuscolo"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FILTRI ============ -->
+<div class="filters" id="archivio">
+  <div class="wrap">
+    <div class="frow">
+      <span class="flabel">Settore</span>
+      <div id="f-settore" class="frow" style="margin:0; gap:8px"></div>
+    </div>
+    <div class="frow cassetti" id="row-cassetti" hidden>
+      <span class="flabel">Cassetto</span>
+      <div id="f-comparto" class="frow" style="margin:0; gap:8px"></div>
+    </div>
+    <div class="frow">
+      <span class="flabel">Tipo</span>
+      <div id="f-tipo" class="frow" style="margin:0; gap:8px"></div>
+    </div>
+    <div class="frow">
+      <span class="flabel">Temi</span>
+      <div id="f-tag" class="frow" style="margin:0; gap:8px"></div>
+    </div>
+    <div class="frow">
+      <label class="search" for="q">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" id="q" placeholder="Cerca ovunque: calabria, san raffaele, cooperative, mensa…" autocomplete="off">
+      </label>
+      <span class="note" id="stato-indice">carico l'indice del testo…</span>
+      <div class="tools">
+        <button class="btn-ghost" id="sort" aria-live="polite">↓ Dal più recente</button>
+        <button class="btn-ghost" id="reset">Azzera filtri</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ GRIGLIA ============ -->
+<main class="wrap">
+  <div class="results-bar">
+    <b id="count">—</b><span id="count-label">documenti</span>
+    <span id="active-filters"></span>
+  </div>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" hidden>
+    <b>Nessun documento con questi filtri.</b>
+    <p>Prova ad azzerare i filtri o a cercare una parola più corta.</p>
+    <button class="btn-red" onclick="document.getElementById('reset').click()">Azzera i filtri</button>
+  </div>
+</main>
+
+<!-- ============ INDICE ENTI ============ -->
+<section class="enti" id="enti">
+  <div class="wrap">
+    <h2 class="sec-title">Indice per ospedale, azienda, luogo di lavoro</h2>
+    <p class="lead-sm">
+      Ogni presidio ha il suo fascicolo: tutti i documenti che lo riguardano in ordine di tempo,
+      dal primo all'ultimo. Alla fine del percorso non c'è un altro PDF — c'è cosa fare adesso.
+    </p>
+    <div class="enti-grid" id="enti-grid"></div>
+  </div>
+</section>
+
+<!-- ============ MODELLO ============ -->
+<section class="howto" id="modello">
+  <div class="wrap">
+    <h2 class="sec-title">Il modello — replicabile su ogni settore</h2>
+    <div class="howto-grid">
+      <div>
+        <h3>Stessa struttura, altro settore</h3>
+        <p>Questa pagina è un modello. Per igiene ambientale, enti locali, logistica o RNLS
+           cambia solo il file dei dati: la griglia, i filtri e il visore restano identici.</p>
+      </div>
+      <div>
+        <h3>Due livelli di scomposizione</h3>
+        <p>Settore (sanità, pubblico impiego, RNLS) e poi il cassetto interno:
+           <b>pubblica</b>, <b>privata</b>, <b>cooperative sociali</b>. Un documento sta in un
+           cassetto solo, così non si perde niente.</p>
+      </div>
+      <div>
+        <h3>Per aggiungere un documento</h3>
+        <ol>
+          <li>PDF in <code>documenti/</code></li>
+          <li>Anteprima della prima pagina in <code>anteprime/</code></li>
+          <li>Una riga in <code>assets/archivio.json</code></li>
+        </ol>
+      </div>
+      <div>
+        <h3>Video e musica</h3>
+        <p>Le pillole video vivono su Instagram e TikTok, ma il pubblico non resta lì:
+           ogni video rimanda a un volantino di questa pagina. Il social è il gancio,
+           l'archivio è la casa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <strong>S.I. Cobas — Sindacato Intercategoriale</strong><br>
+      Sanità e Pubblico Impiego<br>
+      <span class="note">Prototipo di archivio · dati e date da validare</span>
+    </div>
+    <div>
+      <a href="https://sicobas.org">sicobas.org</a><br>
+      <span class="note">Le date con <b style="color:var(--red)">?</b> sono ricavate dal testo e vanno confermate.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ MODALE ============ -->
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="m-title">
+  <div class="sheet">
+    <header>
+      <div class="h">
+        <p class="subline" id="m-sub"></p>
+        <h2 id="m-title"></h2>
+        <p class="hook" id="m-hook"></p>
+      </div>
+      <button class="x" id="m-close" aria-label="Chiudi il documento">✕</button>
+    </header>
+    <div class="viewer" id="m-viewer"></div>
+    <footer>
+      <div class="tags" id="m-tags"></div>
+      <div class="nav-doc">
+        <button class="btn-ghost" id="m-prev" aria-label="Documento precedente">←</button>
+        <button class="btn-ghost" id="m-next" aria-label="Documento successivo">→</button>
+      </div>
+      <a class="btn-red" id="m-dl" href="#" download>Scarica il PDF</a>
+    </footer>
+  </div>
+</div>
+
+<script src="assets/app.js?v=202609061319"></script>
+</body>
+</html>

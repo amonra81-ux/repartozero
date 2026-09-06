@@ -1,0 +1,1663 @@
+{
+ "documenti": [
+  {
+   "slug": "aggressioni-nostre-lotte",
+   "titolo": "Le loro aggressioni, le nostre lotte!",
+   "etichetta": "Repressione",
+   "tipo": "comunicato",
+   "settore": "sanita",
+   "comparto": "privata",
+   "data": "2026-09-01",
+   "stimata": false,
+   "hook": "Denunciano chi lotta e chiamano 'sicurezza' il silenzio.",
+   "tag": [
+    "repressione",
+    "diritto di sciopero"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/aggressioni-nostre-lotte.pdf",
+   "thumb": "anteprime/aggressioni-nostre-lotte.jpg",
+   "ente": "ospedale-san-raffaele",
+   "scansione": false,
+   "parole": 262,
+   "luoghi": [
+    "milano"
+   ]
+  },
+  {
+   "slug": "boss-san-raffaele-offesi",
+   "titolo": "I boss del San Raffaele si sentono offesi",
+   "etichetta": "Provvedimento a Margherita",
+   "tipo": "comunicato",
+   "settore": "sanita",
+   "comparto": "privata",
+   "data": "2026-07-25",
+   "stimata": false,
+   "hook": "Denunci la gestione dell'ospedale e ti arriva il disciplinare.",
+   "tag": [
+    "repressione",
+    "rsa",
+    "san raffaele"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/boss-san-raffaele-offesi.pdf",
+   "thumb": "anteprime/boss-san-raffaele-offesi.jpg",
+   "ente": "ospedale-san-raffaele",
+   "scansione": false,
+   "parole": 547,
+   "luoghi": [
+    "bologna",
+    "milano"
+   ]
+  },
+  {
+   "slug": "rnls-brt-sedriano-assemblea",
+   "titolo": "Rete Nazionale Lavoro Sicuro — assemblea BRT Sedriano",
+   "etichetta": "Lavoro sicuro",
+   "tipo": "iniziativa",
+   "settore": "rnls",
+   "comparto": "",
+   "data": "2026-07-24",
+   "stimata": false,
+   "hook": "La sicurezza non si delega: si organizza in assemblea.",
+   "tag": [
+    "sicurezza",
+    "rnls",
+    "logistica"
+   ],
+   "pagine": 2,
+   "pdf": "documenti/rnls-brt-sedriano-assemblea.pdf",
+   "thumb": "anteprime/rnls-brt-sedriano-assemblea.jpg",
+   "ente": "brt-milano",
+   "scansione": false,
+   "parole": 1044,
+   "luoghi": [
+    "sedriano"
+   ]
+  },
+  {
+   "slug": "rnls-incendio-bovisa",
+   "titolo": "Incendio al quartiere Bovisa di Milano",
+   "etichetta": "Incendio Bovisa",
+   "tipo": "comunicato",
+   "settore": "rnls",
+   "comparto": "",
+   "data": "2026-07-09",
+   "stimata": false,
+   "hook": "Gli incendi crescono. L'intervento arriva sempre il giorno dopo.",
+   "tag": [
+    "sicurezza",
+    "rnls",
+    "prevenzione"
+   ],
+   "pagine": 2,
+   "pdf": "documenti/rnls-incendio-bovisa.pdf",
+   "thumb": "anteprime/rnls-incendio-bovisa.jpg",
+   "ente": "brt-milano",
+   "scansione": false,
+   "parole": 838,
+   "luoghi": [
+    "milano"
+   ]
+  },
+  {
+   "slug": "siamo-tutti-diffidati",
+   "titolo": "Siamo tutti diffidati",
+   "etichetta": "Diffide",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "privata",
+   "data": "2026-07-04",
+   "stimata": false,
+   "hook": "Prima ti mandano allo sbaraglio, poi ti diffidano.",
+   "tag": [
+    "repressione",
+    "condizioni di lavoro"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/siamo-tutti-diffidati.pdf",
+   "thumb": "anteprime/siamo-tutti-diffidati.jpg",
+   "ente": "ospedale-san-raffaele",
+   "scansione": false,
+   "parole": 446,
+   "luoghi": [
+    "milano"
+   ]
+  },
+  {
+   "slug": "spesa-sanitaria-privati",
+   "titolo": "Il 39,5% della spesa sanitaria pubblica finisce ai privati accreditati",
+   "etichetta": "Soldi ai privati",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "privata",
+   "data": "2026-05-29",
+   "stimata": false,
+   "hook": "Quattro euro su dieci della sanità pubblica pagano il privato.",
+   "tag": [
+    "privatizzazione",
+    "spesa sanitaria"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/spesa-sanitaria-privati.pdf",
+   "thumb": "anteprime/spesa-sanitaria-privati.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 640,
+   "luoghi": [
+    "campania",
+    "genova",
+    "lazio",
+    "lombardia",
+    "milano",
+    "puglia",
+    "sicilia"
+   ]
+  },
+  {
+   "slug": "caos-errori-orrori-san-raffaele",
+   "titolo": "Caos, errori ed orrori al San Raffaele",
+   "etichetta": "Caos in terapia intensiva",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "privata",
+   "data": "2025-12-20",
+   "stimata": true,
+   "hook": "Non è un incidente: è la sanità piegata al profitto, giorno per giorno.",
+   "tag": [
+    "privatizzazione",
+    "terapia intensiva",
+    "san raffaele"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/caos-errori-orrori-san-raffaele.pdf",
+   "thumb": "anteprime/caos-errori-orrori-san-raffaele.jpg",
+   "ente": "ospedale-san-raffaele",
+   "scansione": false,
+   "parole": 611,
+   "luoghi": [
+    "milano"
+   ]
+  },
+  {
+   "slug": "rsu-2025-aggiornamento",
+   "titolo": "Rinnovo RSU 14-15-16 aprile: il senso della nostra partecipazione",
+   "etichetta": "Elezioni RSU",
+   "tipo": "comunicato",
+   "settore": "pubblico-impiego",
+   "comparto": "pubblica",
+   "data": "2025-03-28",
+   "stimata": false,
+   "hook": "Ci candidiamo dove non ci vogliono: San Martino e Comune di Genova.",
+   "tag": [
+    "rsu",
+    "rappresentanza"
+   ],
+   "pagine": 3,
+   "pdf": "documenti/rsu-2025-aggiornamento.pdf",
+   "thumb": "anteprime/rsu-2025-aggiornamento.jpg",
+   "ente": "policlinico-san-martino",
+   "scansione": false,
+   "parole": 1504,
+   "luoghi": [
+    "genova"
+   ]
+  },
+  {
+   "slug": "opuscolo-burnout-stress",
+   "titolo": "Ambiente di lavoro, burnout, stress lavorativo, in-sicurezze sul lavoro",
+   "etichetta": "Burnout",
+   "tipo": "opuscolo",
+   "settore": "sanita",
+   "comparto": "pubblica",
+   "data": "2025-02-08",
+   "stimata": false,
+   "hook": "Non sei fragile tu: è il carico di lavoro a essere insostenibile.",
+   "tag": [
+    "burnout",
+    "salute e sicurezza",
+    "organizzazione del lavoro"
+   ],
+   "pagine": 25,
+   "pdf": "documenti/opuscolo-burnout-stress.pdf",
+   "thumb": "anteprime/opuscolo-burnout-stress.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 12286,
+   "luoghi": [
+    "lazio",
+    "milano",
+    "roma",
+    "torino"
+   ]
+  },
+  {
+   "slug": "riunione-burnout-8-febbraio",
+   "titolo": "Riunione online: ambiente di lavoro, burnout, stress lavorativo",
+   "etichetta": "Riunione burnout",
+   "tipo": "iniziativa",
+   "settore": "sanita",
+   "comparto": "pubblica",
+   "data": "2025-01-25",
+   "stimata": true,
+   "hook": "Un'ora per capire perché il lavoro ti sta consumando.",
+   "tag": [
+    "burnout",
+    "formazione"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/riunione-burnout-8-febbraio.pdf",
+   "thumb": "anteprime/riunione-burnout-8-febbraio.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 308,
+   "luoghi": []
+  },
+  {
+   "slug": "mmg-legacoop",
+   "titolo": "Accordo dei Medici di Medicina Generale e Legacoop",
+   "etichetta": "Medici e coop",
+   "tipo": "comunicato",
+   "settore": "sanita",
+   "comparto": "cooperative",
+   "data": "2024-06-20",
+   "stimata": false,
+   "hook": "Il medico di base diventa un servizio in appalto.",
+   "tag": [
+    "privatizzazione",
+    "territorio"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/mmg-legacoop.pdf",
+   "thumb": "anteprime/mmg-legacoop.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 635,
+   "luoghi": [
+    "genova",
+    "milano",
+    "roma"
+   ]
+  },
+  {
+   "slug": "vertenza-ferie-retribuzione",
+   "titolo": "Vertenza per il riconoscimento della piena retribuzione durante le ferie",
+   "etichetta": "Ferie pagate",
+   "tipo": "comunicato",
+   "settore": "sanita",
+   "comparto": "pubblica",
+   "data": "2024-05-27",
+   "stimata": false,
+   "hook": "Anche in ferie il salario è pieno: lo dice la Cassazione.",
+   "tag": [
+    "vertenza",
+    "salario",
+    "diritti"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/vertenza-ferie-retribuzione.pdf",
+   "thumb": "anteprime/vertenza-ferie-retribuzione.jpg",
+   "ente": "policlinico-san-martino",
+   "scansione": false,
+   "parole": 392,
+   "luoghi": [
+    "genova"
+   ]
+  },
+  {
+   "slug": "vademecum-liste-attesa",
+   "titolo": "Vademecum per evitare le liste d'attesa",
+   "etichetta": "Liste d'attesa",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "trasversale",
+   "data": "2024-03-01",
+   "stimata": true,
+   "hook": "La visita c'è: te la vendono, non te la danno.",
+   "tag": [
+    "liste d'attesa",
+    "utenza",
+    "diritto alla salute"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/vademecum-liste-attesa.pdf",
+   "thumb": "anteprime/vademecum-liste-attesa.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 423,
+   "luoghi": [
+    "liguria"
+   ]
+  },
+  {
+   "slug": "legge-bilancio-2024",
+   "titolo": "Legge di Bilancio 2024. Di male in peggio!",
+   "etichetta": "Legge Bilancio",
+   "tipo": "volantino",
+   "settore": "pubblico-impiego",
+   "comparto": "",
+   "data": "2023-12-15",
+   "stimata": true,
+   "hook": "Tagliano la sanità e la chiamano responsabilità.",
+   "tag": [
+    "finanziaria",
+    "tagli"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/legge-bilancio-2024.pdf",
+   "thumb": "anteprime/legge-bilancio-2024.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 789,
+   "luoghi": [
+    "milano"
+   ]
+  },
+  {
+   "slug": "a-piccoli-passi-abbrutimento",
+   "titolo": "A piccoli passi verso l'abbrutimento del quadro sociale",
+   "etichetta": "Solo residenti",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "trasversale",
+   "data": "2023-07-28",
+   "stimata": false,
+   "hook": "A Milano l'assistenza è 'universale'. Solo se sei residente.",
+   "tag": [
+    "privatizzazione",
+    "diritto alla salute",
+    "milano"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/a-piccoli-passi-abbrutimento.pdf",
+   "thumb": "anteprime/a-piccoli-passi-abbrutimento.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 586,
+   "luoghi": [
+    "lombardia",
+    "milano"
+   ]
+  },
+  {
+   "slug": "marta-va-reintegrata",
+   "titolo": "Marta va reintegrata, nessuno resta indietro",
+   "etichetta": "Reintegro Marta",
+   "tipo": "comunicato",
+   "settore": "sanita",
+   "comparto": "cooperative",
+   "data": "2023-07-19",
+   "stimata": true,
+   "hook": "Licenziata per aver alzato la testa. Non resta sola.",
+   "tag": [
+    "licenziamenti",
+    "solidarietà",
+    "terzo settore"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/marta-va-reintegrata.pdf",
+   "thumb": "anteprime/marta-va-reintegrata.jpg",
+   "ente": "diaconia-valdese",
+   "scansione": false,
+   "parole": 478,
+   "luoghi": [
+    "milano"
+   ]
+  },
+  {
+   "slug": "mensa-adesioni-ricorso",
+   "titolo": "Al termine della raccolta delle adesioni al ricorso/vertenza mensa",
+   "etichetta": "Vertenza mensa",
+   "tipo": "comunicato",
+   "settore": "sanita",
+   "comparto": "pubblica",
+   "data": "2023-06-20",
+   "stimata": false,
+   "hook": "Il buono pasto non è un favore: è un diritto in sentenza.",
+   "tag": [
+    "vertenza",
+    "mensa",
+    "genova"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/mensa-adesioni-ricorso.pdf",
+   "thumb": "anteprime/mensa-adesioni-ricorso.jpg",
+   "ente": "policlinico-san-martino",
+   "scansione": false,
+   "parole": 366,
+   "luoghi": [
+    "genova"
+   ]
+  },
+  {
+   "slug": "mensa-diffida-san-martino",
+   "titolo": "Richiesta pagamento somme — IRCCS Policlinico San Martino",
+   "etichetta": "Diffida ospedale",
+   "tipo": "comunicato",
+   "settore": "sanita",
+   "comparto": "pubblica",
+   "data": "2023-06-20",
+   "stimata": false,
+   "hook": "Dalla sentenza alla diffida: come si trasforma un diritto in soldi.",
+   "tag": [
+    "vertenza",
+    "mensa",
+    "genova"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/mensa-diffida-san-martino.pdf",
+   "thumb": "anteprime/mensa-diffida-san-martino.jpg",
+   "ente": "policlinico-san-martino",
+   "scansione": false,
+   "parole": 331,
+   "luoghi": [
+    "genova"
+   ]
+  },
+  {
+   "slug": "mensa-verbale-riunione",
+   "titolo": "Verbale riunione con il legale — vertenza mensa",
+   "etichetta": "Verbale mensa",
+   "tipo": "comunicato",
+   "settore": "sanita",
+   "comparto": "pubblica",
+   "data": "2023-04-03",
+   "stimata": false,
+   "hook": "Come si costruisce una vertenza, riunione dopo riunione.",
+   "tag": [
+    "vertenza",
+    "mensa",
+    "genova"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/mensa-verbale-riunione.pdf",
+   "thumb": "anteprime/mensa-verbale-riunione.jpg",
+   "ente": "policlinico-san-martino",
+   "scansione": false,
+   "parole": 403,
+   "luoghi": [
+    "genova"
+   ]
+  },
+  {
+   "slug": "vertenza-mensa-diritto",
+   "titolo": "Ricorso/vertenza sul diritto alla mensa (Cassazione 5547/21)",
+   "etichetta": "Diritto mensa",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "pubblica",
+   "data": "2023-04-03",
+   "stimata": false,
+   "hook": "Una sentenza vale zero finché qualcuno non la fa applicare.",
+   "tag": [
+    "vertenza",
+    "mensa",
+    "diritti"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/vertenza-mensa-diritto.pdf",
+   "thumb": "anteprime/vertenza-mensa-diritto.jpg",
+   "ente": "policlinico-san-martino",
+   "scansione": false,
+   "parole": 347,
+   "luoghi": [
+    "genova"
+   ]
+  },
+  {
+   "slug": "sportelli-territoriali-conferenza",
+   "titolo": "Conferenza stampa: progetto di rete degli sportelli territoriali sindacali",
+   "etichetta": "Sportelli territorio",
+   "tipo": "iniziativa",
+   "settore": "pubblico-impiego",
+   "comparto": "",
+   "data": "2023-03-29",
+   "stimata": true,
+   "hook": "Uno sportello sotto casa vale più di cento comunicati.",
+   "tag": [
+    "organizzazione",
+    "territorio"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/sportelli-territoriali-conferenza.pdf",
+   "thumb": "anteprime/sportelli-territoriali-conferenza.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 397,
+   "luoghi": [
+    "milano",
+    "roma"
+   ]
+  },
+  {
+   "slug": "hospice-san-martino-como",
+   "titolo": "Chiude l'hospice San Martino di Como",
+   "etichetta": "Hospice chiuso",
+   "tipo": "comunicato",
+   "settore": "sanita",
+   "comparto": "privata",
+   "data": "2023-02-15",
+   "stimata": true,
+   "hook": "Chiudono il posto dove si muore con dignità. Per far quadrare i conti.",
+   "tag": [
+    "tagli",
+    "territorio",
+    "lombardia"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/hospice-san-martino-como.pdf",
+   "thumb": "anteprime/hospice-san-martino-como.jpg",
+   "ente": "hospice-como",
+   "scansione": false,
+   "parole": 452,
+   "luoghi": [
+    "como",
+    "milano"
+   ]
+  },
+  {
+   "slug": "cera-una-volta-ssn",
+   "titolo": "C'era una volta il Servizio Sanitario Nazionale",
+   "etichetta": "Fine del SSN",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "trasversale",
+   "data": "2023-02-01",
+   "stimata": true,
+   "hook": "L'assistenza è diventata una merce. E tu sei il cliente.",
+   "tag": [
+    "privatizzazione",
+    "diritto alla salute"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/cera-una-volta-ssn.pdf",
+   "thumb": "anteprime/cera-una-volta-ssn.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 579,
+   "luoghi": [
+    "milano"
+   ]
+  },
+  {
+   "slug": "farsa-ecm",
+   "titolo": "La farsa degli ECM",
+   "etichetta": "Crediti ECM",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "pubblica",
+   "data": "2023-01-20",
+   "stimata": true,
+   "hook": "Ti formano a tue spese e nel tuo tempo libero. Si chiama obbligo.",
+   "tag": [
+    "formazione",
+    "tempo di lavoro"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/farsa-ecm.pdf",
+   "thumb": "anteprime/farsa-ecm.jpg",
+   "ente": "policlinico-san-martino",
+   "scansione": false,
+   "parole": 278,
+   "luoghi": [
+    "genova"
+   ]
+  },
+  {
+   "slug": "contratto-a-perdere",
+   "titolo": "Il rinnovo del contratto nazionale della sanità pubblica: un contratto a perdere",
+   "etichetta": "Contratto perso",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "pubblica",
+   "data": "2022-11-20",
+   "stimata": true,
+   "hook": "Firmano per te un contratto che non recupera nemmeno l'inflazione.",
+   "tag": [
+    "ccnl",
+    "salario"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/contratto-a-perdere.pdf",
+   "thumb": "anteprime/contratto-a-perdere.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 486,
+   "luoghi": [
+    "milano"
+   ]
+  },
+  {
+   "slug": "contratto-a-pochi-tanto",
+   "titolo": "Contratto: a pochi tanto, a tanti niente!",
+   "etichetta": "Nuove fasce",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "pubblica",
+   "data": "2022-11-20",
+   "stimata": true,
+   "hook": "La nuova classificazione premia i vertici e divide tutti gli altri.",
+   "tag": [
+    "ccnl",
+    "salario",
+    "classificazione"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/contratto-a-pochi-tanto.pdf",
+   "thumb": "anteprime/contratto-a-pochi-tanto.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 514,
+   "luoghi": []
+  },
+  {
+   "slug": "incontro-pubblico-impiego-22-ottobre",
+   "titolo": "Sabato 22 ottobre: incontro dei lavoratori del Pubblico Impiego",
+   "etichetta": "Incontro nazionale",
+   "tipo": "iniziativa",
+   "settore": "pubblico-impiego",
+   "comparto": "",
+   "data": "2022-10-22",
+   "stimata": false,
+   "hook": "Sanità, enti locali, scuola: stesso padrone, stessa lotta.",
+   "tag": [
+    "organizzazione",
+    "pubblico impiego"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/incontro-pubblico-impiego-22-ottobre.pdf",
+   "thumb": "anteprime/incontro-pubblico-impiego-22-ottobre.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 454,
+   "luoghi": [
+    "milano",
+    "roma"
+   ]
+  },
+  {
+   "slug": "san-martino-bandiera-bianca",
+   "titolo": "Genova: l'ospedale San Martino alza bandiera bianca",
+   "etichetta": "Interventi rinviati",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "pubblica",
+   "data": "2022-08-31",
+   "stimata": false,
+   "hook": "Operazioni rinviate di tre mesi. Non è emergenza: è organico.",
+   "tag": [
+    "organici",
+    "liste d'attesa",
+    "genova"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/san-martino-bandiera-bianca.pdf",
+   "thumb": "anteprime/san-martino-bandiera-bianca.jpg",
+   "ente": "policlinico-san-martino",
+   "scansione": false,
+   "parole": 480,
+   "luoghi": [
+    "genova",
+    "milano"
+   ]
+  },
+  {
+   "slug": "euro-guerra-salute",
+   "titolo": "Ogni euro speso per la guerra è un euro sottratto alla salute",
+   "etichetta": "Guerra o salute",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "trasversale",
+   "data": "2022-03-25",
+   "stimata": true,
+   "hook": "I miliardi per le armi si trovano sempre. Per i reparti mai.",
+   "tag": [
+    "guerra",
+    "spesa pubblica"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/euro-guerra-salute.pdf",
+   "thumb": "anteprime/euro-guerra-salute.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 343,
+   "luoghi": [
+    "milano"
+   ]
+  },
+  {
+   "slug": "opuscolo-contratto-unico",
+   "titolo": "Conferenza dei lavoratori della sanità: per un contratto unico",
+   "etichetta": "Contratto unico",
+   "tipo": "opuscolo",
+   "settore": "sanita",
+   "comparto": "trasversale",
+   "data": "2022-03-18",
+   "stimata": false,
+   "hook": "Un solo contratto per sanità, sociale e pubblico impiego. Perché no?",
+   "tag": [
+    "ccnl",
+    "contratto unico",
+    "organizzazione"
+   ],
+   "pagine": 8,
+   "pdf": "documenti/opuscolo-contratto-unico.pdf",
+   "thumb": "anteprime/opuscolo-contratto-unico.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 4327,
+   "luoghi": [
+    "como",
+    "emilia",
+    "lombardia",
+    "milano"
+   ]
+  },
+  {
+   "slug": "profughi-ucraini-sanita",
+   "titolo": "Profughi ucraini nella sanità italiana",
+   "etichetta": "Profughi ucraini",
+   "tipo": "comunicato",
+   "settore": "sanita",
+   "comparto": "cooperative",
+   "data": "2022-03-15",
+   "stimata": true,
+   "hook": "Manodopera in fuga dalla guerra, assunta al ribasso.",
+   "tag": [
+    "migranti",
+    "dumping salariale"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/profughi-ucraini-sanita.pdf",
+   "thumb": "anteprime/profughi-ucraini-sanita.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 299,
+   "luoghi": [
+    "milano"
+   ]
+  },
+  {
+   "slug": "rsu-2022-genova",
+   "titolo": "S.I. Cobas alle elezioni RSU 2022",
+   "etichetta": "RSU 2022",
+   "tipo": "volantino",
+   "settore": "pubblico-impiego",
+   "comparto": "",
+   "data": "2022-03-10",
+   "stimata": true,
+   "hook": "Certi sindacati esistono solo quando ci sono le elezioni.",
+   "tag": [
+    "rsu",
+    "rappresentanza",
+    "genova"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/rsu-2022-genova.pdf",
+   "thumb": "anteprime/rsu-2022-genova.jpg",
+   "ente": "policlinico-san-martino",
+   "scansione": false,
+   "parole": 230,
+   "luoghi": [
+    "genova"
+   ]
+  },
+  {
+   "slug": "per-un-contratto-unico",
+   "titolo": "Per un contratto unico per tutta l'area sanitaria",
+   "etichetta": "Area unica",
+   "tipo": "opuscolo",
+   "settore": "sanita",
+   "comparto": "trasversale",
+   "data": "2022-03-01",
+   "stimata": true,
+   "hook": "Ci hanno divisi in dieci contratti per pagarci tutti di meno.",
+   "tag": [
+    "ccnl",
+    "contratto unico"
+   ],
+   "pagine": 5,
+   "pdf": "documenti/per-un-contratto-unico.pdf",
+   "thumb": "anteprime/per-un-contratto-unico.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 2513,
+   "luoghi": [
+    "como",
+    "emilia",
+    "milano"
+   ]
+  },
+  {
+   "slug": "case-ospedali-comunita",
+   "titolo": "Case e Ospedali di 'Comunità' ma non per la comunità",
+   "etichetta": "Case comunità",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "trasversale",
+   "data": "2022-02-20",
+   "stimata": true,
+   "hook": "Cambiano le insegne, non cambia chi resta senza cure.",
+   "tag": [
+    "pnrr",
+    "territorio",
+    "prevenzione"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/case-ospedali-comunita.pdf",
+   "thumb": "anteprime/case-ospedali-comunita.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 753,
+   "luoghi": [
+    "calabria",
+    "genova"
+   ]
+  },
+  {
+   "slug": "pnrr-trappola-inganno",
+   "titolo": "PNRR: una trappola e un inganno per i poveri e gli sfruttati",
+   "etichetta": "PNRR",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "trasversale",
+   "data": "2022-02-15",
+   "stimata": true,
+   "hook": "Ti raccontano la pioggia di miliardi. Non ti dicono chi la incassa.",
+   "tag": [
+    "pnrr",
+    "spesa pubblica"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/pnrr-trappola-inganno.pdf",
+   "thumb": "anteprime/pnrr-trappola-inganno.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 692,
+   "luoghi": []
+  },
+  {
+   "slug": "sistema-sanitario-inglese",
+   "titolo": "Il sistema sanitario inglese (NHS)",
+   "etichetta": "Modello inglese",
+   "tipo": "opuscolo",
+   "settore": "sanita",
+   "comparto": "trasversale",
+   "data": "2022-02-05",
+   "stimata": true,
+   "hook": "Il NHS nacque universale nel 1948. Guarda com'è finito.",
+   "tag": [
+    "comparazione internazionale",
+    "privatizzazione"
+   ],
+   "pagine": 2,
+   "pdf": "documenti/sistema-sanitario-inglese.pdf",
+   "thumb": "anteprime/sistema-sanitario-inglese.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 998,
+   "luoghi": []
+  },
+  {
+   "slug": "sistema-sanitario-spagnolo",
+   "titolo": "Il Servizio Sanitario Spagnolo",
+   "etichetta": "Modello spagnolo",
+   "tipo": "opuscolo",
+   "settore": "sanita",
+   "comparto": "trasversale",
+   "data": "2022-01-28",
+   "stimata": false,
+   "hook": "Stessa ricetta in tutta Europa: tagliare e appaltare.",
+   "tag": [
+    "comparazione internazionale",
+    "privatizzazione"
+   ],
+   "pagine": 3,
+   "pdf": "documenti/sistema-sanitario-spagnolo.pdf",
+   "thumb": "anteprime/sistema-sanitario-spagnolo.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 1606,
+   "luoghi": [
+    "genova",
+    "lombardia",
+    "milano"
+   ]
+  },
+  {
+   "slug": "truffa-continua-tfr",
+   "titolo": "Truffa continua! (di nuovo sul TFR)",
+   "etichetta": "TFR",
+   "tipo": "volantino",
+   "settore": "pubblico-impiego",
+   "comparto": "",
+   "data": "2022-01-15",
+   "stimata": true,
+   "hook": "Il tuo TFR non è in ritardo: è in mano a qualcun altro.",
+   "tag": [
+    "tfr",
+    "salario differito"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/truffa-continua-tfr.pdf",
+   "thumb": "anteprime/truffa-continua-tfr.jpg",
+   "ente": "policlinico-san-martino",
+   "scansione": false,
+   "parole": 373,
+   "luoghi": [
+    "genova"
+   ]
+  },
+  {
+   "slug": "asst-valle-olona",
+   "titolo": "ASST Valle Olona, un tunnel senza luce",
+   "etichetta": "Valle Olona",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "pubblica",
+   "data": "2021-11-15",
+   "stimata": true,
+   "hook": "Immagine rassicurante fuori, allarmi e precarietà dentro.",
+   "tag": [
+    "organici",
+    "condizioni di lavoro",
+    "lombardia"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/asst-valle-olona.pdf",
+   "thumb": "anteprime/asst-valle-olona.jpg",
+   "ente": "asst-valle-olona",
+   "scansione": false,
+   "parole": 483,
+   "luoghi": [
+    "milano"
+   ]
+  },
+  {
+   "slug": "piacciono-quando-muoiono",
+   "titolo": "I lavoratori della sanità piacciono solo quando muoiono",
+   "etichetta": "Eroi e basta",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "trasversale",
+   "data": "2021-09-25",
+   "stimata": true,
+   "hook": "Applausi dal balcone, poi ti rimandano dentro senza personale.",
+   "tag": [
+    "pandemia",
+    "sciopero",
+    "retorica degli eroi"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/piacciono-quando-muoiono.pdf",
+   "thumb": "anteprime/piacciono-quando-muoiono.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 362,
+   "luoghi": [
+    "como",
+    "genova"
+   ]
+  },
+  {
+   "slug": "borseggiatori-tfr",
+   "titolo": "Attenzione ai borseggiatori del TFR!",
+   "etichetta": "TFR in fumo",
+   "tipo": "volantino",
+   "settore": "pubblico-impiego",
+   "comparto": "",
+   "data": "2021-09-16",
+   "stimata": true,
+   "hook": "Ti spostano il TFR nei fondi e lo chiamano 'opportunità'.",
+   "tag": [
+    "tfr",
+    "previdenza integrativa"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/borseggiatori-tfr.pdf",
+   "thumb": "anteprime/borseggiatori-tfr.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 402,
+   "luoghi": [
+    "milano"
+   ]
+  },
+  {
+   "slug": "parole-parole-parole",
+   "titolo": "L'era Draghi prevede 40.000 operatori sanitari in meno entro il 2024",
+   "etichetta": "40.000 in meno",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "pubblica",
+   "data": "2021-06-15",
+   "stimata": true,
+   "hook": "Promettono stabilizzazioni e programmano 40.000 uscite.",
+   "tag": [
+    "organici",
+    "precarietà"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/parole-parole-parole.pdf",
+   "thumb": "anteprime/parole-parole-parole.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 596,
+   "luoghi": [
+    "genova"
+   ]
+  },
+  {
+   "slug": "essere-infermiera",
+   "titolo": "Essere infermiera: che cosa mi ha insegnato",
+   "etichetta": "Voce dal reparto",
+   "tipo": "comunicato",
+   "settore": "sanita",
+   "comparto": "pubblica",
+   "data": "2021-05-20",
+   "stimata": true,
+   "hook": "Non siamo eroine. Siamo lavoratrici stanche.",
+   "tag": [
+    "testimonianza",
+    "pandemia",
+    "retorica degli eroi"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/essere-infermiera.pdf",
+   "thumb": "anteprime/essere-infermiera.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 619,
+   "luoghi": [
+    "genova"
+   ]
+  },
+  {
+   "slug": "assemblea-obbligo-vaccinale",
+   "titolo": "Assemblea con l'avvocato sull'obbligo vaccinale per il personale sanitario",
+   "etichetta": "Assemblea legale",
+   "tipo": "iniziativa",
+   "settore": "sanita",
+   "comparto": "pubblica",
+   "data": "2021-04-30",
+   "stimata": false,
+   "hook": "Prima di firmare qualsiasi cosa, ascolta un legale.",
+   "tag": [
+    "obbligo vaccinale",
+    "tutela legale",
+    "genova"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/assemblea-obbligo-vaccinale.pdf",
+   "thumb": "anteprime/assemblea-obbligo-vaccinale.jpg",
+   "ente": "policlinico-san-martino",
+   "scansione": false,
+   "parole": 347,
+   "luoghi": [
+    "genova"
+   ]
+  },
+  {
+   "slug": "workers-memorial-day",
+   "titolo": "Workers Memorial Day — 28 aprile",
+   "etichetta": "28 aprile",
+   "tipo": "volantino",
+   "settore": "rnls",
+   "comparto": "",
+   "data": "2021-04-28",
+   "stimata": true,
+   "hook": "Un giorno all'anno per contarli. Il resto dell'anno per fermarli.",
+   "tag": [
+    "morti sul lavoro",
+    "sicurezza",
+    "rnls"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/workers-memorial-day.pdf",
+   "thumb": "anteprime/workers-memorial-day.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 349,
+   "luoghi": []
+  },
+  {
+   "slug": "obbligo-vaccinale-difesa",
+   "titolo": "Obbligo vaccinale: primo incontro con il legale per la difesa dei lavoratori",
+   "etichetta": "Difesa legale",
+   "tipo": "comunicato",
+   "settore": "sanita",
+   "comparto": "pubblica",
+   "data": "2021-04-21",
+   "stimata": false,
+   "hook": "Nessuno viene lasciato solo davanti a un provvedimento.",
+   "tag": [
+    "obbligo vaccinale",
+    "tutela legale"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/obbligo-vaccinale-difesa.pdf",
+   "thumb": "anteprime/obbligo-vaccinale-difesa.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 241,
+   "luoghi": [
+    "genova"
+   ]
+  },
+  {
+   "slug": "patto-innovazione-brunetta",
+   "titolo": "Il Patto per l'innovazione del lavoro pubblico: arruolamento volontario",
+   "etichetta": "Patto Brunetta",
+   "tipo": "volantino",
+   "settore": "pubblico-impiego",
+   "comparto": "",
+   "data": "2021-04-13",
+   "stimata": false,
+   "hook": "Firmano l'innovazione. La paghi tu, in produttività.",
+   "tag": [
+    "pubblico impiego",
+    "concertazione"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/patto-innovazione-brunetta.pdf",
+   "thumb": "anteprime/patto-innovazione-brunetta.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 582,
+   "luoghi": [
+    "genova"
+   ]
+  },
+  {
+   "slug": "si-vaccini-no-decreto",
+   "titolo": "Sì ai vaccini! No al decreto Draghi!",
+   "etichetta": "Decreto Draghi",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "pubblica",
+   "data": "2021-04-05",
+   "stimata": true,
+   "hook": "Sulla salute pubblica si discute, non si scarica sul singolo.",
+   "tag": [
+    "obbligo vaccinale",
+    "pandemia"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/si-vaccini-no-decreto.pdf",
+   "thumb": "anteprime/si-vaccini-no-decreto.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 581,
+   "luoghi": [
+    "genova",
+    "milano"
+   ]
+  },
+  {
+   "slug": "maria-antonietta-vaccini",
+   "titolo": "Maria Antonietta è tornata: i vaccini scarseggiano",
+   "etichetta": "Vaccini finiti",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "pubblica",
+   "data": "2021-04-01",
+   "stimata": false,
+   "hook": "Non c'è pane? Mangiate brioche. Non ci sono vaccini? Arrangiatevi.",
+   "tag": [
+    "pandemia",
+    "organizzazione sanitaria"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/maria-antonietta-vaccini.pdf",
+   "thumb": "anteprime/maria-antonietta-vaccini.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 401,
+   "luoghi": [
+    "genova",
+    "milano"
+   ]
+  },
+  {
+   "slug": "tempo-rubato",
+   "titolo": "Restituiteci il tempo rubato!",
+   "etichetta": "Posti letto",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "pubblica",
+   "data": "2021-02-20",
+   "stimata": true,
+   "hook": "Metà dei posti letto tagliati in vent'anni. Poi l'emergenza.",
+   "tag": [
+    "tagli",
+    "posti letto",
+    "privatizzazione"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/tempo-rubato.pdf",
+   "thumb": "anteprime/tempo-rubato.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 483,
+   "luoghi": [
+    "milano"
+   ]
+  },
+  {
+   "slug": "sciopero-29-gennaio",
+   "titolo": "29 gennaio: sciopero generale! Aderiamo in massa",
+   "etichetta": "Sciopero 29/1",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "pubblica",
+   "data": "2021-01-18",
+   "stimata": false,
+   "hook": "La pandemia non allenta. Nemmeno la pressione sui carichi di lavoro.",
+   "tag": [
+    "sciopero",
+    "pandemia",
+    "carichi di lavoro"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/sciopero-29-gennaio.pdf",
+   "thumb": "anteprime/sciopero-29-gennaio.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 551,
+   "luoghi": [
+    "genova",
+    "milano"
+   ]
+  },
+  {
+   "slug": "assemblea-6-dicembre",
+   "titolo": "Domenica 6 dicembre: assemblea nazionale dei lavoratori della sanità",
+   "etichetta": "Assemblea zoom",
+   "tipo": "iniziativa",
+   "settore": "sanita",
+   "comparto": "trasversale",
+   "data": "2020-12-06",
+   "stimata": true,
+   "hook": "Ci si organizza anche a distanza. Soprattutto a distanza.",
+   "tag": [
+    "assemblea",
+    "organizzazione"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/assemblea-6-dicembre.pdf",
+   "thumb": "anteprime/assemblea-6-dicembre.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 325,
+   "luoghi": []
+  },
+  {
+   "slug": "agitazione-san-raffaele-2020",
+   "titolo": "San Raffaele: aiutiamoli a spezzare le catene",
+   "etichetta": "Solidarietà da Genova",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "privata",
+   "data": "2020-05-13",
+   "stimata": false,
+   "hook": "Delegati incatenati davanti alla sede: la protesta che nessuno ha raccontato.",
+   "tag": [
+    "solidarietà",
+    "gruppo san donato",
+    "fis",
+    "san raffaele"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/agitazione-san-raffaele-2020.pdf",
+   "thumb": "anteprime/agitazione-san-raffaele-2020.jpg",
+   "ente": "ospedale-san-raffaele",
+   "trascritto": true,
+   "scansione": true,
+   "parole": 299,
+   "luoghi": [
+    "milano"
+   ]
+  },
+  {
+   "slug": "mandati-al-macello",
+   "titolo": "Comparto sanità: i lavoratori mandati al macello!",
+   "etichetta": "Marzo 2020",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "pubblica",
+   "data": "2020-03-26",
+   "stimata": false,
+   "hook": "Marzo 2020. Senza dispositivi, senza verità, senza scelta.",
+   "tag": [
+    "pandemia",
+    "dpi",
+    "sicurezza"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/mandati-al-macello.pdf",
+   "thumb": "anteprime/mandati-al-macello.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 503,
+   "luoghi": [
+    "milano"
+   ]
+  },
+  {
+   "slug": "patto-per-la-salute",
+   "titolo": "Patto per la salute: un patto contro la salute",
+   "etichetta": "Patto salute",
+   "tipo": "opuscolo",
+   "settore": "sanita",
+   "comparto": "trasversale",
+   "data": "2020-02-01",
+   "stimata": true,
+   "hook": "Leggi il patto fino in fondo: la salute non è l'obiettivo.",
+   "tag": [
+    "politiche sanitarie",
+    "regioni",
+    "privatizzazione"
+   ],
+   "pagine": 12,
+   "pdf": "documenti/patto-per-la-salute.pdf",
+   "thumb": "anteprime/patto-per-la-salute.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 6825,
+   "luoghi": [
+    "emilia",
+    "liguria",
+    "lombardia",
+    "marche",
+    "milano",
+    "palermo",
+    "piemonte",
+    "roma",
+    "veneto"
+   ]
+  },
+  {
+   "slug": "peppe-policlinico",
+   "titolo": "Lotta continua… contro i lavoratori (il caso di Peppe)",
+   "etichetta": "Caso Peppe",
+   "tipo": "comunicato",
+   "settore": "sanita",
+   "comparto": "pubblica",
+   "data": "2019-08-10",
+   "stimata": true,
+   "hook": "Quarant'anni di reparto, e alla fine ti trattano da nemico.",
+   "tag": [
+    "repressione",
+    "solidarietà",
+    "roma"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/peppe-policlinico.pdf",
+   "thumb": "anteprime/peppe-policlinico.jpg",
+   "ente": "policlinico-umberto-i",
+   "scansione": false,
+   "parole": 467,
+   "luoghi": [
+    "genova",
+    "milano"
+   ]
+  },
+  {
+   "slug": "avanti-savoia",
+   "titolo": "Avanti Savoia!",
+   "etichetta": "Storico 2016",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "pubblica",
+   "data": "2016-06-10",
+   "stimata": false,
+   "hook": "Dall'archivio: quando il taglio si chiamava ancora spending review.",
+   "tag": [
+    "storico",
+    "tagli"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/avanti-savoia.pdf",
+   "thumb": "anteprime/avanti-savoia.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 696,
+   "luoghi": [
+    "genova",
+    "milano",
+    "roma"
+   ]
+  },
+  {
+   "slug": "oss-firme-riconoscimento",
+   "titolo": "Supporters e campioni: la raccolta firme per gli OSS",
+   "etichetta": "OSS firme",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "pubblica",
+   "data": "2014-06-17",
+   "stimata": false,
+   "hook": "Le firme online non spostano un turno. L'organizzazione sì.",
+   "tag": [
+    "storico",
+    "oss",
+    "professionalità"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/oss-firme-riconoscimento.pdf",
+   "thumb": "anteprime/oss-firme-riconoscimento.jpg",
+   "ente": "policlinico-san-martino",
+   "scansione": false,
+   "parole": 417,
+   "luoghi": [
+    "genova"
+   ]
+  },
+  {
+   "slug": "professionalita-leggenda",
+   "titolo": "Professionalità: leggenda o favola ospedaliera?",
+   "etichetta": "Professionalità",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "pubblica",
+   "data": "2010-09-22",
+   "stimata": false,
+   "hook": "Ti chiedono professionalità e ti pagano come un intercambiabile.",
+   "tag": [
+    "storico",
+    "professionalità",
+    "salario"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/professionalita-leggenda.pdf",
+   "thumb": "anteprime/professionalita-leggenda.jpg",
+   "ente": "policlinico-san-martino",
+   "scansione": false,
+   "parole": 336,
+   "luoghi": [
+    "genova"
+   ]
+  },
+  {
+   "slug": "professionalita-reddito",
+   "titolo": "Professionalità? Ma mi faccia il piacere!",
+   "etichetta": "Prof. e reddito",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "pubblica",
+   "data": "2009-05-16",
+   "stimata": false,
+   "hook": "Dall'archivio Sin.Base: professionalità senza reddito è retorica.",
+   "tag": [
+    "storico",
+    "professionalità",
+    "salario"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/professionalita-reddito.pdf",
+   "thumb": "anteprime/professionalita-reddito.jpg",
+   "ente": "",
+   "scansione": false,
+   "parole": 445,
+   "luoghi": [
+    "genova"
+   ]
+  },
+  {
+   "slug": "banditi-a-milano",
+   "titolo": "Banditi a Milano (il caso Santa Rita)",
+   "etichetta": "Clinica Santa Rita",
+   "tipo": "volantino",
+   "settore": "sanita",
+   "comparto": "privata",
+   "data": "2008-06-15",
+   "stimata": false,
+   "hook": "Premiata dalla Regione. Poi si scoprì cosa faceva ai pazienti.",
+   "tag": [
+    "storico",
+    "privatizzazione",
+    "lombardia"
+   ],
+   "pagine": 1,
+   "pdf": "documenti/banditi-a-milano.pdf",
+   "thumb": "anteprime/banditi-a-milano.jpg",
+   "ente": "clinica-santa-rita",
+   "scansione": false,
+   "parole": 456,
+   "luoghi": [
+    "genova",
+    "lombardia",
+    "milano"
+   ]
+  }
+ ],
+ "enti": {
+  "ospedale-san-raffaele": {
+   "nome": "Ospedale San Raffaele — Gruppo San Donato",
+   "citta": "Milano",
+   "tipo": "Ospedale privato accreditato",
+   "nota": "Il fascicolo aperto: dai delegati incatenati nel 2020 al caos nelle terapie intensive, dalle diffide ai licenziamenti, fino al presidio mai interrotto. È la vertenza su cui si agisce adesso.",
+   "n": 5,
+   "dal": "2020-05-13",
+   "al": "2026-09-01",
+   "azione": {
+    "bozza": false,
+    "titolo": "Manifestazione nazionale a Milano",
+    "quando": "Sabato 19 settembre 2026, ore 10.00",
+    "dove": "Milano — corteo",
+    "testo": "Il presidio dei lavoratori del San Raffaele non si è mai interrotto. I licenziamenti di Margherita e Simone non sono un caso isolato: sono il metodo. Leggere l'archivio serve a una cosa sola — esserci quel sabato mattina.",
+    "passi": [
+     "Vieni al corteo: sabato 19 settembre, ore 10.00, Milano",
+     "Porta almeno un collega del tuo reparto",
+     "Stampa il volantino “Le loro aggressioni, le nostre lotte!” e attaccalo in spogliatoio",
+     "Se anche da te arrivano diffide o provvedimenti, scrivi al coordinamento prima di firmare"
+    ],
+    "cta": "Ci sarò",
+    "link": "mailto:milano@sicobas.org?subject=Manifestazione%2019%20settembre"
+   },
+   "mancanti": [],
+   "citazioni": []
+  },
+  "policlinico-san-martino": {
+   "nome": "IRCCS Policlinico San Martino",
+   "citta": "Genova",
+   "tipo": "Ospedale pubblico",
+   "nota": "Il presidio con la storia documentale più lunga: dalle campagne sulla professionalità del 2010 alla vertenza mensa e alle RSU 2025.",
+   "n": 13,
+   "dal": "2010-09-22",
+   "al": "2025-03-28",
+   "azione": {
+    "bozza": true,
+    "titolo": "Assemblea dei lavoratori del San Martino",
+    "quando": "DATA DA CONFERMARE",
+    "dove": "Largo Rosanna Benzi — ingresso monoblocco, Genova",
+    "testo": "La vertenza mensa ha già prodotto una sentenza e una diffida. Il passo successivo non è un altro documento: è la presenza fisica davanti all'ospedale.",
+    "passi": [
+     "Vieni all'assemblea e porta un collega del tuo reparto",
+     "Stampa il volantino e attaccalo in spogliatoio",
+     "Scrivi al coordinamento se nel tuo reparto mancano turni o personale"
+    ],
+    "cta": "Voglio esserci",
+    "link": "mailto:genova@sicobas.org?subject=Assemblea%20San%20Martino"
+   },
+   "mancanti": [],
+   "citazioni": [
+    "agitazione-san-raffaele-2020"
+   ]
+  },
+  "asst-valle-olona": {
+   "nome": "ASST Valle Olona",
+   "citta": "Busto Arsizio / Gallarate",
+   "tipo": "Azienda socio-sanitaria pubblica",
+   "nota": "Allarmi, precarietà e rischi per utenti e personale dietro un'immagine rassicurante.",
+   "n": 1,
+   "dal": "2021-11-15",
+   "al": "2021-11-15",
+   "azione": null,
+   "mancanti": [],
+   "citazioni": []
+  },
+  "hospice-como": {
+   "nome": "Hospice San Martino di Como",
+   "citta": "Como",
+   "tipo": "Struttura privata convenzionata",
+   "nota": "La chiusura di un hospice raccontata come problema gestionale.",
+   "n": 1,
+   "dal": "2023-02-15",
+   "al": "2023-02-15",
+   "azione": null,
+   "mancanti": [],
+   "citazioni": []
+  },
+  "policlinico-umberto-i": {
+   "nome": "Policlinico Umberto I",
+   "citta": "Roma",
+   "tipo": "Ospedale pubblico universitario",
+   "nota": "Il caso di Peppe: quarant'anni di reparto e una rappresaglia a fine carriera.",
+   "n": 1,
+   "dal": "2019-08-10",
+   "al": "2019-08-10",
+   "azione": null,
+   "mancanti": [],
+   "citazioni": []
+  },
+  "clinica-santa-rita": {
+   "nome": "Clinica Santa Rita",
+   "citta": "Milano",
+   "tipo": "Clinica privata accreditata",
+   "nota": "Premiata dalla Regione Lombardia, poi al centro di un'inchiesta giudiziaria.",
+   "n": 1,
+   "dal": "2008-06-15",
+   "al": "2008-06-15",
+   "azione": null,
+   "mancanti": [],
+   "citazioni": [
+    "a-piccoli-passi-abbrutimento"
+   ]
+  },
+  "diaconia-valdese": {
+   "nome": "Diaconia Valdese",
+   "citta": "Milano",
+   "tipo": "Terzo settore / cooperative",
+   "nota": "Sciopero e presidio per il reintegro di una lavoratrice licenziata.",
+   "n": 1,
+   "dal": "2023-07-19",
+   "al": "2023-07-19",
+   "azione": null,
+   "mancanti": [],
+   "citazioni": []
+  },
+  "brt-milano": {
+   "nome": "BRT — Sedriano e Bovisa",
+   "citta": "Milano",
+   "tipo": "Logistica (Rete Nazionale Lavoro Sicuro)",
+   "nota": "Il fronte sicurezza fuori dalla sanità: assemblee di sito e incendi in magazzino.",
+   "n": 2,
+   "dal": "2026-07-09",
+   "al": "2026-07-24",
+   "azione": null,
+   "mancanti": [],
+   "citazioni": []
+  }
+ }
+}
