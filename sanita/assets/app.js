@@ -28,18 +28,22 @@ let DATI = [], ENTI = {}, TESTI = null;
 let vista = [], mostrati = PASSO;
 const stato = { settore: '', comparto: '', tipo: '', tema: '', q: '', ordine: 'desc' };
 
+// i dati cambiano insieme al codice: la versione evita che il browser
+// serva un archivio vecchio tenuto in cache
+const VERSIONE = '8';
+
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c]));
 const senzaAccenti = s => s.normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/[’‘]/g, "'").toLowerCase();
 
 /* ---------- avvio ---------- */
-fetch('assets/archivio.json')
+fetch('assets/archivio.json?v=' + VERSIONE)
   .then(r => r.json())
   .then(d => {
     DATI = d.documenti; ENTI = d.enti || {};
     init();
-    fetch('assets/testi.json').then(r => r.json()).then(t => {
+    fetch('assets/testi.json?v=' + VERSIONE).then(r => r.json()).then(t => {
       TESTI = t;
       if (stato.q) rendi();          // la ricerca si allarga al testo appena arriva
     }).catch(() => {});

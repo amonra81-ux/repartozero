@@ -6,6 +6,10 @@ const SETTORI = { 'sanita':'Sanità', 'pubblico-impiego':'Pubblico impiego', 'rn
 const COMPARTI = { 'pubblica':'Sanità pubblica', 'privata':'Sanità privata e accreditata',
   'cooperative':'Cooperative sociali e terzo settore', 'trasversale':'Trasversale al settore' };
 
+// i dati cambiano insieme al codice: la versione evita che il browser
+// serva un archivio vecchio tenuto in cache
+const VERSIONE = '8';
+
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c]));
@@ -13,7 +17,7 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&':'&amp;','<':'&lt;','>'
 let vista = [], indice = -1, ultimoFocus = null;
 const chiave = new URLSearchParams(location.search).get('e') || '';
 
-fetch('assets/archivio.json').then(r => r.json()).then(d => {
+fetch('assets/archivio.json?v=' + VERSIONE).then(r => r.json()).then(d => {
   const ente = (d.enti || {})[chiave];
   if (!ente) {
     $('#e-nome').textContent = 'Fascicolo non trovato';
