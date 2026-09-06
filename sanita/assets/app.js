@@ -25,14 +25,14 @@ const TIPI = {
 const VETRINA = 5;            // quanti se ne vedono entrando, senza filtri
 const PER_PAGINA = 20;        // quanti per pagina quando si sfoglia
 
-let DATI = [], ENTI = {}, TESTI = null, STILI = {}, ICONE = {};
+let DATI = [], ENTI = {}, TESTI = null, STILI = {}, ICONE = {}, LETTURA = null;
 let vista = [];
 const stato = { settore: '', comparto: '', tipo: '', tema: '', q: '',
                 ordine: 'desc', pagina: 1, sfoglia: false };
 
 // i dati cambiano insieme al codice: la versione evita che il browser
 // serva un archivio vecchio tenuto in cache
-const VERSIONE = '15';
+const VERSIONE = '16';
 
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -50,6 +50,9 @@ fetch('assets/archivio.json?v=' + VERSIONE)
       TESTI = t;
       if (stato.q) rendi();          // la ricerca si allarga al testo appena arriva
     }).catch(() => {});
+    // il testo leggibile del documento, per il lettore
+    fetch('assets/lettura.json?v=' + VERSIONE).then(r => r.json())
+      .then(l => { LETTURA = l; }).catch(() => {});
   })
   .catch(() => {
     $('#grid').innerHTML =
@@ -365,19 +368,7 @@ function apri(i) {
   $('#m-dl').href = d.pdf;
   $('#m-dl').setAttribute('download', d.slug + '.pdf');
 
-  // Su telefono gli iframe PDF non funzionano (iOS li tronca, Android li
-  // scarica): il documento si legge come sequenza di immagini, dentro la
-  // pagina. Nessun salto fuori dal sito.
-  const stretto = window.matchMedia('(max-width: 820px)').matches;
-  const pagine = d.immagini || [];
-  $('#m-viewer').innerHTML = (stretto && pagine.length)
-    ? `<div class="lettore">` + pagine.map((p, i) => `
-         <figure>
-           <img src="${p}" alt="Pagina ${i + 1} di ${pagine.length}: ${esc(d.titolo)}"
-                loading="${i === 0 ? 'eager' : 'lazy'}" decoding="async">
-           ${pagine.length > 1 ? `<figcaption>${i + 1} / ${pagine.length}</figcaption>` : ''}
-         </figure>`).join('') + `</div>`
-    : `<iframe src="${d.pdf}#view=FitH&toolbar=1" title="Documento: ${esc(d.titolo)}" loading="lazy"></iframe>`;
+  disegnaLettore(d);
 
   $('#overlay').classList.add('is-open');
   document.body.style.overflow = 'hidden';
@@ -436,4 +427,50 @@ function disegnaPagine(pagine) {
               aria-label="Pagina successiva">→</button>
            <span class="pag-di">pagina ${p} di ${pagine}</span>`;
   nav.innerHTML = html;
+}
+
+
+/* ---------- lettore ----------
+   Una pagina A4 larga 336px non si legge: il corpo viene alto 4 pixel.
+   Su telefono si legge il TESTO, che si adatta alla larghezza; la
+   scansione originale resta a un tocco. Sullo schermo largo il PDF
+   vero e leggibile e resta quello. */
+let vistaLettore = 'testo';
+
+function disegnaLettore(d) {
+  const stretto = window.matchMedia('(max-width: 820px)').matches;
+  const v = $('#m-viewer');
+
+  if (!stretto) {
+    v.innerHTML = `<iframe src="${d.pdf}#view=FitH&toolbar=1" title="Documento: ${esc(d.titolo)}" loading="lazy"></iframe>`;
+    return;
+  }
+
+  const testo = (LETTURA && LETTURA[d.slug]) || [];
+  const pagine = d.immagini || [];
+  if (!testo.length) vistaLettore = 'originale';
+
+  const scelta = `
+    <div class="scelta-vista" role="group" aria-label="Come vedere il documento">
+      <button data-vista="testo" ${!testo.length ? 'disabled' : ''}
+              aria-pressed="${vistaLettore === 'testo'}">Testo</button>
+      <button data-vista="originale" aria-pressed="${vistaLettore === 'originale'}">Originale</button>
+    </div>`;
+
+  const corpo = vistaLettore === 'testo' && testo.length
+    ? `<article class="testo-doc">${testo.map(p => `<p>${esc(p)}</p>`).join('')}</article>`
+    : `<div class="lettore">` + pagine.map((p, i) => `
+         <figure>
+           <img src="${p}" alt="Pagina ${i + 1} di ${pagine.length}: ${esc(d.titolo)}"
+                loading="${i === 0 ? 'eager' : 'lazy'}" decoding="async">
+           ${pagine.length > 1 ? `<figcaption>${i + 1} / ${pagine.length}</figcaption>` : ''}
+         </figure>`).join('') + `</div>`;
+
+  v.innerHTML = scelta + corpo;
+  v.querySelector('.scelta-vista').addEventListener('click', e => {
+    const b = e.target.closest('[data-vista]'); if (!b || b.disabled) return;
+    vistaLettore = b.dataset.vista;
+    disegnaLettore(d);
+    v.scrollTop = 0;
+  });
 }

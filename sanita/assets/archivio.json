@@ -30,7 +30,8 @@
    "stile": "Repressione e licenziamenti",
    "immagini": [
     "pagine/aggressioni-nostre-lotte-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "boss-san-raffaele-offesi",
@@ -65,7 +66,8 @@
    "stile": "Repressione e licenziamenti",
    "immagini": [
     "pagine/boss-san-raffaele-offesi-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "rnls-brt-sedriano-assemblea",
@@ -99,7 +101,8 @@
    "immagini": [
     "pagine/rnls-brt-sedriano-assemblea-1.webp",
     "pagine/rnls-brt-sedriano-assemblea-2.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "rnls-incendio-bovisa",
@@ -133,7 +136,8 @@
    "immagini": [
     "pagine/rnls-incendio-bovisa-1.webp",
     "pagine/rnls-incendio-bovisa-2.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "siamo-tutti-diffidati",
@@ -166,7 +170,8 @@
    "stile": "Repressione e licenziamenti",
    "immagini": [
     "pagine/siamo-tutti-diffidati-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "spesa-sanitaria-privati",
@@ -204,7 +209,8 @@
    "stile": "Privatizzazione e profitto",
    "immagini": [
     "pagine/spesa-sanitaria-privati-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "caos-errori-orrori-san-raffaele",
@@ -238,7 +244,8 @@
    "stile": "Privatizzazione e profitto",
    "immagini": [
     "pagine/caos-errori-orrori-san-raffaele-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "rsu-2025-aggiornamento",
@@ -272,7 +279,8 @@
     "pagine/rsu-2025-aggiornamento-1.webp",
     "pagine/rsu-2025-aggiornamento-2.webp",
     "pagine/rsu-2025-aggiornamento-3.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "opuscolo-burnout-stress",
@@ -333,7 +341,8 @@
     "pagine/opuscolo-burnout-stress-23.webp",
     "pagine/opuscolo-burnout-stress-24.webp",
     "pagine/opuscolo-burnout-stress-25.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "riunione-burnout-8-febbraio",
@@ -364,7 +373,8 @@
    "stile": "Salute e sicurezza sul lavoro",
    "immagini": [
     "pagine/riunione-burnout-8-febbraio-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "mmg-legacoop",
@@ -398,7 +408,8 @@
    "stile": "Privatizzazione e profitto",
    "immagini": [
     "pagine/mmg-legacoop-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "vertenza-ferie-retribuzione",
@@ -432,7 +443,8 @@
    "stile": "Lotte, scioperi, vertenze",
    "immagini": [
     "pagine/vertenza-ferie-retribuzione-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "vademecum-liste-attesa",
@@ -465,7 +477,8 @@
    "stile": "Diritto alla salute",
    "immagini": [
     "pagine/vademecum-liste-attesa-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "legge-bilancio-2024",
@@ -497,7 +510,8 @@
    "stile": "Privatizzazione e profitto",
    "immagini": [
     "pagine/legge-bilancio-2024-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "a-piccoli-passi-abbrutimento",
@@ -532,7 +546,8 @@
    "stile": "Privatizzazione e profitto",
    "immagini": [
     "pagine/a-piccoli-passi-abbrutimento-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "marta-va-reintegrata",
@@ -567,7 +582,8 @@
    "stile": "Repressione e licenziamenti",
    "immagini": [
     "pagine/marta-va-reintegrata-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "mensa-adesioni-ricorso",
@@ -601,7 +617,8 @@
    "stile": "Lotte, scioperi, vertenze",
    "immagini": [
     "pagine/mensa-adesioni-ricorso-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "mensa-diffida-san-martino",
@@ -635,7 +652,8 @@
    "stile": "Lotte, scioperi, vertenze",
    "immagini": [
     "pagine/mensa-diffida-san-martino-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "mensa-verbale-riunione",
@@ -669,7 +687,8 @@
    "stile": "Lotte, scioperi, vertenze",
    "immagini": [
     "pagine/mensa-verbale-riunione-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "vertenza-mensa-diritto",
@@ -703,7 +722,8 @@
    "stile": "Lotte, scioperi, vertenze",
    "immagini": [
     "pagine/vertenza-mensa-diritto-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "sportelli-territoriali-conferenza",
@@ -737,7 +757,8 @@
    "stile": "Rappresentanza e RSU",
    "immagini": [
     "pagine/sportelli-territoriali-conferenza-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "hospice-san-martino-como",
@@ -771,7 +792,8 @@
    "stile": "Privatizzazione e profitto",
    "immagini": [
     "pagine/hospice-san-martino-como-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "cera-una-volta-ssn",
@@ -804,7 +826,8 @@
    "stile": "Privatizzazione e profitto",
    "immagini": [
     "pagine/cera-una-volta-ssn-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "farsa-ecm",
@@ -837,7 +860,8 @@
    "stile": "Professionalità e formazione",
    "immagini": [
     "pagine/farsa-ecm-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "contratto-a-perdere",
@@ -869,7 +893,8 @@
    "stile": "Salario e contratto",
    "immagini": [
     "pagine/contratto-a-perdere-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "contratto-a-pochi-tanto",
@@ -900,7 +925,8 @@
    "stile": "Salario e contratto",
    "immagini": [
     "pagine/contratto-a-pochi-tanto-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "incontro-pubblico-impiego-22-ottobre",
@@ -933,7 +959,8 @@
    "stile": "Rappresentanza e RSU",
    "immagini": [
     "pagine/incontro-pubblico-impiego-22-ottobre-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "san-martino-bandiera-bianca",
@@ -968,7 +995,8 @@
    "stile": "Organici e carichi di lavoro",
    "immagini": [
     "pagine/san-martino-bandiera-bianca-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "euro-guerra-salute",
@@ -1001,7 +1029,8 @@
    "stile": "Guerra",
    "immagini": [
     "pagine/euro-guerra-salute-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "opuscolo-contratto-unico",
@@ -1045,7 +1074,8 @@
     "pagine/opuscolo-contratto-unico-6.webp",
     "pagine/opuscolo-contratto-unico-7.webp",
     "pagine/opuscolo-contratto-unico-8.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "profughi-ucraini-sanita",
@@ -1077,7 +1107,8 @@
    "stile": "Privatizzazione e profitto",
    "immagini": [
     "pagine/profughi-ucraini-sanita-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "rsu-2022-genova",
@@ -1110,7 +1141,8 @@
    "stile": "Rappresentanza e RSU",
    "immagini": [
     "pagine/rsu-2022-genova-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "per-un-contratto-unico",
@@ -1148,7 +1180,8 @@
     "pagine/per-un-contratto-unico-3.webp",
     "pagine/per-un-contratto-unico-4.webp",
     "pagine/per-un-contratto-unico-5.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "case-ospedali-comunita",
@@ -1183,7 +1216,8 @@
    "stile": "Privatizzazione e profitto",
    "immagini": [
     "pagine/case-ospedali-comunita-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "pnrr-trappola-inganno",
@@ -1213,7 +1247,8 @@
    "stile": "Privatizzazione e profitto",
    "immagini": [
     "pagine/pnrr-trappola-inganno-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "sistema-sanitario-inglese",
@@ -1245,7 +1280,8 @@
    "immagini": [
     "pagine/sistema-sanitario-inglese-1.webp",
     "pagine/sistema-sanitario-inglese-2.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "sistema-sanitario-spagnolo",
@@ -1282,7 +1318,8 @@
     "pagine/sistema-sanitario-spagnolo-1.webp",
     "pagine/sistema-sanitario-spagnolo-2.webp",
     "pagine/sistema-sanitario-spagnolo-3.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "truffa-continua-tfr",
@@ -1314,7 +1351,8 @@
    "stile": "Salario e contratto",
    "immagini": [
     "pagine/truffa-continua-tfr-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "asst-valle-olona",
@@ -1347,7 +1385,8 @@
    "stile": "Organici e carichi di lavoro",
    "immagini": [
     "pagine/asst-valle-olona-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "piacciono-quando-muoiono",
@@ -1382,7 +1421,8 @@
    "stile": "Pandemia",
    "immagini": [
     "pagine/piacciono-quando-muoiono-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "borseggiatori-tfr",
@@ -1414,7 +1454,8 @@
    "stile": "Salario e contratto",
    "immagini": [
     "pagine/borseggiatori-tfr-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "parole-parole-parole",
@@ -1446,7 +1487,8 @@
    "stile": "Organici e carichi di lavoro",
    "immagini": [
     "pagine/parole-parole-parole-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "essere-infermiera",
@@ -1479,7 +1521,8 @@
    "stile": "Pandemia",
    "immagini": [
     "pagine/essere-infermiera-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "assemblea-obbligo-vaccinale",
@@ -1513,7 +1556,8 @@
    "stile": "Pandemia",
    "immagini": [
     "pagine/assemblea-obbligo-vaccinale-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "workers-memorial-day",
@@ -1544,7 +1588,8 @@
    "stile": "Salute e sicurezza sul lavoro",
    "immagini": [
     "pagine/workers-memorial-day-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "obbligo-vaccinale-difesa",
@@ -1577,7 +1622,8 @@
    "stile": "Pandemia",
    "immagini": [
     "pagine/obbligo-vaccinale-difesa-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "patto-innovazione-brunetta",
@@ -1609,7 +1655,8 @@
    "stile": "Salario e contratto",
    "immagini": [
     "pagine/patto-innovazione-brunetta-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "si-vaccini-no-decreto",
@@ -1642,7 +1689,8 @@
    "stile": "Pandemia",
    "immagini": [
     "pagine/si-vaccini-no-decreto-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "maria-antonietta-vaccini",
@@ -1676,7 +1724,8 @@
    "stile": "Pandemia",
    "immagini": [
     "pagine/maria-antonietta-vaccini-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "tempo-rubato",
@@ -1709,7 +1758,8 @@
    "stile": "Privatizzazione e profitto",
    "immagini": [
     "pagine/tempo-rubato-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "sciopero-29-gennaio",
@@ -1745,7 +1795,8 @@
    "stile": "Lotte, scioperi, vertenze",
    "immagini": [
     "pagine/sciopero-29-gennaio-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "assemblea-6-dicembre",
@@ -1775,7 +1826,8 @@
    "stile": "Rappresentanza e RSU",
    "immagini": [
     "pagine/assemblea-6-dicembre-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "agitazione-san-raffaele-2020",
@@ -1812,7 +1864,9 @@
    "stile": "Lotte, scioperi, vertenze",
    "immagini": [
     "pagine/agitazione-san-raffaele-2020-1.webp"
-   ]
+   ],
+   "testo_trascritto": true,
+   "ha_testo": true
   },
   {
    "slug": "mandati-al-macello",
@@ -1846,7 +1900,8 @@
    "stile": "Pandemia",
    "immagini": [
     "pagine/mandati-al-macello-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "patto-per-la-salute",
@@ -1898,7 +1953,8 @@
     "pagine/patto-per-la-salute-10.webp",
     "pagine/patto-per-la-salute-11.webp",
     "pagine/patto-per-la-salute-12.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "peppe-policlinico",
@@ -1933,7 +1989,8 @@
    "stile": "Repressione e licenziamenti",
    "immagini": [
     "pagine/peppe-policlinico-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "avanti-savoia",
@@ -1967,7 +2024,8 @@
    "stile": "Privatizzazione e profitto",
    "immagini": [
     "pagine/avanti-savoia-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "oss-firme-riconoscimento",
@@ -2000,7 +2058,8 @@
    "stile": "Professionalità e formazione",
    "immagini": [
     "pagine/oss-firme-riconoscimento-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "professionalita-leggenda",
@@ -2034,7 +2093,8 @@
    "stile": "Professionalità e formazione",
    "immagini": [
     "pagine/professionalita-leggenda-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "professionalita-reddito",
@@ -2068,7 +2128,8 @@
    "stile": "Professionalità e formazione",
    "immagini": [
     "pagine/professionalita-reddito-1.webp"
-   ]
+   ],
+   "ha_testo": true
   },
   {
    "slug": "banditi-a-milano",
@@ -2103,7 +2164,8 @@
    "stile": "Privatizzazione e profitto",
    "immagini": [
     "pagine/banditi-a-milano-1.webp"
-   ]
+   ],
+   "ha_testo": true
   }
  ],
  "enti": {
