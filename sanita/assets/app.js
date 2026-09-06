@@ -32,7 +32,7 @@ const stato = { settore: '', comparto: '', tipo: '', tema: '', q: '',
 
 // i dati cambiano insieme al codice: la versione evita che il browser
 // serva un archivio vecchio tenuto in cache
-const VERSIONE = '11';
+const VERSIONE = '12';
 
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
