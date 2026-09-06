@@ -32,7 +32,7 @@ const stato = { settore: '', comparto: '', tipo: '', tema: '', q: '',
 
 // i dati cambiano insieme al codice: la versione evita che il browser
 // serva un archivio vecchio tenuto in cache
-const VERSIONE = '14';
+const VERSIONE = '15';
 
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -365,13 +365,18 @@ function apri(i) {
   $('#m-dl').href = d.pdf;
   $('#m-dl').setAttribute('download', d.slug + '.pdf');
 
+  // Su telefono gli iframe PDF non funzionano (iOS li tronca, Android li
+  // scarica): il documento si legge come sequenza di immagini, dentro la
+  // pagina. Nessun salto fuori dal sito.
   const stretto = window.matchMedia('(max-width: 820px)').matches;
-  $('#m-viewer').innerHTML = stretto
-    ? `<div class="mobile-fallback">
-         <img src="${d.thumb}" alt="Prima pagina di ${esc(d.titolo)}">
-         <a class="btn-red" href="${d.pdf}" target="_blank" rel="noopener">Apri il documento (${d.pagine} ${d.pagine === 1 ? 'pagina' : 'pagine'})</a>
-         <p class="note">Su telefono il PDF si apre nel lettore del sistema: si legge meglio.</p>
-       </div>`
+  const pagine = d.immagini || [];
+  $('#m-viewer').innerHTML = (stretto && pagine.length)
+    ? `<div class="lettore">` + pagine.map((p, i) => `
+         <figure>
+           <img src="${p}" alt="Pagina ${i + 1} di ${pagine.length}: ${esc(d.titolo)}"
+                loading="${i === 0 ? 'eager' : 'lazy'}" decoding="async">
+           ${pagine.length > 1 ? `<figcaption>${i + 1} / ${pagine.length}</figcaption>` : ''}
+         </figure>`).join('') + `</div>`
     : `<iframe src="${d.pdf}#view=FitH&toolbar=1" title="Documento: ${esc(d.titolo)}" loading="lazy"></iframe>`;
 
   $('#overlay').classList.add('is-open');
