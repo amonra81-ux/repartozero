@@ -22,15 +22,17 @@ const TIPI = {
   'opuscolo': 'Opuscolo', 'iniziativa': 'Iniziativa'
 };
 
-const PASSO = 5;              // quanti documenti si vedono all'inizio
+const VETRINA = 5;            // quanti se ne vedono entrando, senza filtri
+const PER_PAGINA = 20;        // quanti per pagina quando si sfoglia
 
-let DATI = [], ENTI = {}, TESTI = null;
-let vista = [], mostrati = PASSO;
-const stato = { settore: '', comparto: '', tipo: '', tema: '', q: '', ordine: 'desc' };
+let DATI = [], ENTI = {}, TESTI = null, STILI = {}, ICONE = {};
+let vista = [];
+const stato = { settore: '', comparto: '', tipo: '', tema: '', q: '',
+                ordine: 'desc', pagina: 1, sfoglia: false };
 
 // i dati cambiano insieme al codice: la versione evita che il browser
 // serva un archivio vecchio tenuto in cache
-const VERSIONE = '8';
+const VERSIONE = '9';
 
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -42,6 +44,7 @@ fetch('assets/archivio.json?v=' + VERSIONE)
   .then(r => r.json())
   .then(d => {
     DATI = d.documenti; ENTI = d.enti || {};
+    STILI = d.stili || {}; ICONE = d.icone || {};
     init();
     fetch('assets/testi.json?v=' + VERSIONE).then(r => r.json()).then(t => {
       TESTI = t;
@@ -92,12 +95,16 @@ function init() {
     $('#documenti').scrollIntoView({ block: 'start' });
   });
 
-  $('#mostra-altri').addEventListener('click', () => {
-    const primoNuovo = mostrati;
-    mostrati += PASSO * 3;
+  $('#sfoglia').addEventListener('click', () => {
+    stato.sfoglia = true; stato.pagina = 1; rendi();
+    $('#documenti').scrollIntoView({ block: 'start' });
+  });
+
+  $('#pagine').addEventListener('click', e => {
+    const b = e.target.closest('[data-pagina]'); if (!b) return;
+    stato.pagina = +b.dataset.pagina;
     rendi();
-    const el = $$('#grid .card')[primoNuovo];
-    if (el) el.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    $('#documenti').scrollIntoView({ block: 'start' });
   });
 
   $('#azzera').addEventListener('click', azzera);
@@ -110,14 +117,15 @@ function init() {
 }
 
 function azzera() {
-  Object.assign(stato, { settore: '', comparto: '', tipo: '', tema: '', q: '' });
+  Object.assign(stato, { settore: '', comparto: '', tipo: '', tema: '', q: '',
+                         pagina: 1, sfoglia: false });
   $('#q').value = ''; $('#pulisci').hidden = true;
   ['#f-settore', '#f-comparto', '#f-tipo', '#f-tema'].forEach(s => $(s).value = '');
   $('#box-comparto').hidden = true;
   ripristinaPasso(); rendi();
 }
 
-function ripristinaPasso() { mostrati = PASSO; }
+function ripristinaPasso() { stato.pagina = 1; }
 
 /* ---------- tendine ---------- */
 function riempiTendina(sel, chiave, mappa, etichettaTutti) {
@@ -178,27 +186,36 @@ function rendi() {
   }).sort((a, b) => stato.ordine === 'desc' ? b.data.localeCompare(a.data) : a.data.localeCompare(b.data));
 
   const filtrato = !!(stato.settore || stato.comparto || stato.tipo || stato.tema || stato.q);
-  $('#azzera').disabled = !filtrato;
+  $('#azzera').disabled = !filtrato && !stato.sfoglia;
+
+  // entrando si vedono i cinque piu recenti; filtrando o sfogliando si va a pagine
+  const aPagine = filtrato || stato.sfoglia;
+  const perPagina = aPagine ? PER_PAGINA : VETRINA;
+  const pagine = Math.max(1, Math.ceil(vista.length / perPagina));
+  if (stato.pagina > pagine) stato.pagina = pagine;
+  const da = (stato.pagina - 1) * perPagina;
+  const fetta = vista.slice(da, da + perPagina);
 
   const nelTesto = stato.q ? vista.filter(d => d._dove === 'testo').length : 0;
-  const visti = Math.min(mostrati, vista.length);
   $('#conteggio').innerHTML = vista.length === 0
     ? 'nessun risultato'
-    : (filtrato
+    : (aPagine
         ? `<b>${vista.length}</b> ${vista.length === 1 ? 'documento' : 'documenti'}` +
           (stato.q ? ` per <em>${esc(stato.q)}</em>` : '') +
-          (nelTesto ? ` · <span class="dentro">${nelTesto} dentro il testo</span>` : '')
-        : `i più recenti · <b>${visti}</b> di ${vista.length} in archivio`) +
-      (filtrato && vista.length > visti ? ` · ne vedi ${visti}` : '');
+          (nelTesto ? ` · <span class="dentro">${nelTesto} dentro il testo</span>` : '') +
+          (pagine > 1 ? ` · ${da + 1}-${da + fetta.length}` : '')
+        : `i più recenti · <b>${fetta.length}</b> di ${vista.length} in archivio`);
 
   $('#empty').hidden = vista.length > 0;
-  $('#grid').innerHTML = vista.slice(0, mostrati).map(scheda).join('');
-  $$('#grid .card').forEach((c, i) => c.addEventListener('click', () => apri(i)));
+  $('#grid').innerHTML = fetta.map(scheda).join('');
+  $$('#grid .card').forEach((c, i) => c.addEventListener('click', () => apri(da + i)));
 
-  const restanti = vista.length - mostrati;
-  const b = $('#mostra-altri');
-  b.hidden = restanti <= 0;
-  if (restanti > 0) b.innerHTML = `Mostra altri ${Math.min(restanti, PASSO * 3)} <small>ne restano ${restanti}</small>`;
+  // il bottone per passare dalla vetrina allo sfoglio
+  const b = $('#sfoglia');
+  b.hidden = aPagine || vista.length <= VETRINA;
+  if (!b.hidden) b.innerHTML = `Sfoglia tutto l'archivio <small>${vista.length} documenti</small>`;
+
+  disegnaPagine(aPagine ? pagine : 1);
 }
 
 function dataBreve(d) {
@@ -206,15 +223,32 @@ function dataBreve(d) {
   return MESI[+m - 1] + ' ' + a + (d.stimata ? ' <span class="q" title="data ricavata dal testo, da confermare">?</span>' : '');
 }
 
+function copertina(d) {
+  const st = STILI[d.stile] || STILI._neutro || { colore: '#2B2F36', icona: 'file-text' };
+  const icona = ICONE[st.icona] || '';
+  // 4 documenti su 62 hanno una prima pagina disegnata: quella si tiene com'è
+  if (d.copertina === 'pagina') {
+    return `<img src="${d.thumb}" alt="Prima pagina di: ${esc(d.titolo)}" loading="lazy" decoding="async">`;
+  }
+  return `
+    <span class="cop" style="--cop:${st.colore}">
+      <svg class="cop-icona" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${icona}</svg>
+      <span class="cop-testo">${esc(d.etichetta)}</span>
+      <span class="cop-tema">${esc(d.stile === '_neutro' ? SETTORI[d.settore] : d.stile)}</span>
+    </span>
+    <img class="cop-pagina" src="${d.thumb}" alt="Prima pagina di: ${esc(d.titolo)}" loading="lazy" decoding="async">`;
+}
+
 function scheda(d) {
   return `<button class="card" type="button" aria-label="Apri: ${esc(d.titolo)}">
     <span class="thumb">
       <span class="badge ${d.tipo}">${TIPI[d.tipo]}</span>
       <span class="pagebadge">${d.pagine} ${d.pagine === 1 ? 'pag' : 'pagg'}</span>
-      <img src="${d.thumb}" alt="Prima pagina di: ${esc(d.titolo)}" loading="lazy" decoding="async">
+      ${copertina(d)}
     </span>
     <span class="meta">
-      <span class="etichetta">${esc(d.etichetta)}</span>
+      ${d.copertina === 'pagina' ? `<span class="etichetta">${esc(d.etichetta)}</span>` : ''}
       <span class="data">${dataBreve(d)}</span>
       ${d._dove === 'testo'
         ? `<span class="estratto"><b>nel testo</b> ${estratto(d.slug, stato.q)}</span>`
@@ -313,4 +347,33 @@ function apriDaURL() {
   if (i < 0) return;
   if (i >= mostrati) { mostrati = i + 1; rendi(); }
   apri(i);
+}
+
+
+/* ---------- pagine ----------
+   con poche decine di documenti basterebbe un bottone "mostra altri", ma
+   fra dieci anni saranno migliaia: le pagine reggono, lo scorrimento no. */
+function disegnaPagine(pagine) {
+  const nav = $('#pagine');
+  nav.hidden = pagine <= 1;
+  if (nav.hidden) { nav.innerHTML = ''; return; }
+
+  const p = stato.pagina;
+  const nums = new Set([1, pagine, p, p - 1, p + 1]);
+  if (p <= 3) { nums.add(2); nums.add(3); }
+  if (p >= pagine - 2) { nums.add(pagine - 1); nums.add(pagine - 2); }
+  const elenco = [...nums].filter(n => n >= 1 && n <= pagine).sort((a, b) => a - b);
+
+  let html = `<button class="pag-freccia" data-pagina="${p - 1}" ${p === 1 ? 'disabled' : ''}
+                 aria-label="Pagina precedente">←</button>`;
+  let ultimo = 0;
+  for (const n of elenco) {
+    if (n - ultimo > 1) html += `<span class="pag-salto">…</span>`;
+    html += `<button class="pag-num" data-pagina="${n}" ${n === p ? 'aria-current="page"' : ''}>${n}</button>`;
+    ultimo = n;
+  }
+  html += `<button class="pag-freccia" data-pagina="${p + 1}" ${p === pagine ? 'disabled' : ''}
+              aria-label="Pagina successiva">→</button>
+           <span class="pag-di">pagina ${p} di ${pagine}</span>`;
+  nav.innerHTML = html;
 }

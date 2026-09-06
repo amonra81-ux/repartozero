@@ -25,7 +25,9 @@
    ],
    "temi": [
     "Repressione e licenziamenti"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Repressione e licenziamenti"
   },
   {
    "slug": "boss-san-raffaele-offesi",
@@ -55,7 +57,9 @@
    "temi": [
     "Repressione e licenziamenti",
     "Rappresentanza e RSU"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Repressione e licenziamenti"
   },
   {
    "slug": "rnls-brt-sedriano-assemblea",
@@ -83,7 +87,9 @@
    ],
    "temi": [
     "Salute e sicurezza sul lavoro"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Salute e sicurezza sul lavoro"
   },
   {
    "slug": "rnls-incendio-bovisa",
@@ -111,7 +117,9 @@
    ],
    "temi": [
     "Salute e sicurezza sul lavoro"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Salute e sicurezza sul lavoro"
   },
   {
    "slug": "siamo-tutti-diffidati",
@@ -139,7 +147,9 @@
    "temi": [
     "Repressione e licenziamenti",
     "Organici e carichi di lavoro"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Repressione e licenziamenti"
   },
   {
    "slug": "spesa-sanitaria-privati",
@@ -172,7 +182,9 @@
    ],
    "temi": [
     "Privatizzazione e profitto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Privatizzazione e profitto"
   },
   {
    "slug": "caos-errori-orrori-san-raffaele",
@@ -201,7 +213,9 @@
    "temi": [
     "Privatizzazione e profitto",
     "Diritto alla salute"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Privatizzazione e profitto"
   },
   {
    "slug": "rsu-2025-aggiornamento",
@@ -228,7 +242,9 @@
    ],
    "temi": [
     "Rappresentanza e RSU"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Rappresentanza e RSU"
   },
   {
    "slug": "opuscolo-burnout-stress",
@@ -260,7 +276,9 @@
    "temi": [
     "Salute e sicurezza sul lavoro",
     "Organici e carichi di lavoro"
-   ]
+   ],
+   "copertina": "pagina",
+   "stile": "Salute e sicurezza sul lavoro"
   },
   {
    "slug": "riunione-burnout-8-febbraio",
@@ -286,7 +304,9 @@
    "temi": [
     "Salute e sicurezza sul lavoro",
     "Professionalità e formazione"
-   ]
+   ],
+   "copertina": "pagina",
+   "stile": "Salute e sicurezza sul lavoro"
   },
   {
    "slug": "mmg-legacoop",
@@ -315,7 +335,9 @@
    ],
    "temi": [
     "Privatizzazione e profitto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Privatizzazione e profitto"
   },
   {
    "slug": "vertenza-ferie-retribuzione",
@@ -344,7 +366,9 @@
    "temi": [
     "Lotte, scioperi, vertenze",
     "Salario e contratto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Lotte, scioperi, vertenze"
   },
   {
    "slug": "vademecum-liste-attesa",
@@ -372,7 +396,9 @@
    ],
    "temi": [
     "Diritto alla salute"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Diritto alla salute"
   },
   {
    "slug": "legge-bilancio-2024",
@@ -399,7 +425,9 @@
    ],
    "temi": [
     "Privatizzazione e profitto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Privatizzazione e profitto"
   },
   {
    "slug": "a-piccoli-passi-abbrutimento",
@@ -429,7 +457,9 @@
    "temi": [
     "Privatizzazione e profitto",
     "Diritto alla salute"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Privatizzazione e profitto"
   },
   {
    "slug": "marta-va-reintegrata",
@@ -459,7 +489,9 @@
     "Repressione e licenziamenti",
     "Lotte, scioperi, vertenze",
     "Privatizzazione e profitto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Repressione e licenziamenti"
   },
   {
    "slug": "mensa-adesioni-ricorso",
@@ -488,7 +520,9 @@
    "temi": [
     "Lotte, scioperi, vertenze",
     "Salario e contratto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Lotte, scioperi, vertenze"
   },
   {
    "slug": "mensa-diffida-san-martino",
@@ -517,7 +551,9 @@
    "temi": [
     "Lotte, scioperi, vertenze",
     "Salario e contratto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Lotte, scioperi, vertenze"
   },
   {
    "slug": "mensa-verbale-riunione",
@@ -546,7 +582,9 @@
    "temi": [
     "Lotte, scioperi, vertenze",
     "Salario e contratto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Lotte, scioperi, vertenze"
   },
   {
    "slug": "vertenza-mensa-diritto",
@@ -575,7 +613,9 @@
    "temi": [
     "Lotte, scioperi, vertenze",
     "Salario e contratto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Lotte, scioperi, vertenze"
   },
   {
    "slug": "sportelli-territoriali-conferenza",
@@ -604,7 +644,9 @@
    "temi": [
     "Rappresentanza e RSU",
     "Privatizzazione e profitto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Rappresentanza e RSU"
   },
   {
    "slug": "hospice-san-martino-como",
@@ -633,7 +675,9 @@
    ],
    "temi": [
     "Privatizzazione e profitto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Privatizzazione e profitto"
   },
   {
    "slug": "cera-una-volta-ssn",
@@ -661,7 +705,9 @@
    "temi": [
     "Privatizzazione e profitto",
     "Diritto alla salute"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Privatizzazione e profitto"
   },
   {
    "slug": "farsa-ecm",
@@ -689,7 +735,9 @@
    "temi": [
     "Professionalità e formazione",
     "Organici e carichi di lavoro"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Professionalità e formazione"
   },
   {
    "slug": "contratto-a-perdere",
@@ -716,7 +764,9 @@
    ],
    "temi": [
     "Salario e contratto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Salario e contratto"
   },
   {
    "slug": "contratto-a-pochi-tanto",
@@ -742,7 +792,9 @@
    "luoghi": [],
    "temi": [
     "Salario e contratto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Salario e contratto"
   },
   {
    "slug": "incontro-pubblico-impiego-22-ottobre",
@@ -770,7 +822,9 @@
    ],
    "temi": [
     "Rappresentanza e RSU"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Rappresentanza e RSU"
   },
   {
    "slug": "san-martino-bandiera-bianca",
@@ -800,7 +854,9 @@
    "temi": [
     "Organici e carichi di lavoro",
     "Diritto alla salute"
-   ]
+   ],
+   "copertina": "pagina",
+   "stile": "Organici e carichi di lavoro"
   },
   {
    "slug": "euro-guerra-salute",
@@ -828,7 +884,9 @@
    "temi": [
     "Guerra",
     "Privatizzazione e profitto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Guerra"
   },
   {
    "slug": "opuscolo-contratto-unico",
@@ -860,7 +918,9 @@
    "temi": [
     "Salario e contratto",
     "Rappresentanza e RSU"
-   ]
+   ],
+   "copertina": "pagina",
+   "stile": "Salario e contratto"
   },
   {
    "slug": "profughi-ucraini-sanita",
@@ -887,7 +947,9 @@
    ],
    "temi": [
     "Privatizzazione e profitto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Privatizzazione e profitto"
   },
   {
    "slug": "rsu-2022-genova",
@@ -915,7 +977,9 @@
    ],
    "temi": [
     "Rappresentanza e RSU"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Rappresentanza e RSU"
   },
   {
    "slug": "per-un-contratto-unico",
@@ -944,7 +1008,9 @@
    ],
    "temi": [
     "Salario e contratto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Salario e contratto"
   },
   {
    "slug": "case-ospedali-comunita",
@@ -974,7 +1040,9 @@
    "temi": [
     "Privatizzazione e profitto",
     "Salute e sicurezza sul lavoro"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Privatizzazione e profitto"
   },
   {
    "slug": "pnrr-trappola-inganno",
@@ -999,7 +1067,9 @@
    "luoghi": [],
    "temi": [
     "Privatizzazione e profitto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Privatizzazione e profitto"
   },
   {
    "slug": "sistema-sanitario-inglese",
@@ -1025,7 +1095,9 @@
    "temi": [
     "Come funziona altrove",
     "Privatizzazione e profitto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Come funziona altrove"
   },
   {
    "slug": "sistema-sanitario-spagnolo",
@@ -1055,7 +1127,9 @@
    "temi": [
     "Come funziona altrove",
     "Privatizzazione e profitto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Come funziona altrove"
   },
   {
    "slug": "truffa-continua-tfr",
@@ -1082,7 +1156,9 @@
    ],
    "temi": [
     "Salario e contratto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Salario e contratto"
   },
   {
    "slug": "asst-valle-olona",
@@ -1110,7 +1186,9 @@
    ],
    "temi": [
     "Organici e carichi di lavoro"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Organici e carichi di lavoro"
   },
   {
    "slug": "piacciono-quando-muoiono",
@@ -1140,7 +1218,9 @@
    "temi": [
     "Pandemia",
     "Lotte, scioperi, vertenze"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Pandemia"
   },
   {
    "slug": "borseggiatori-tfr",
@@ -1167,7 +1247,9 @@
    ],
    "temi": [
     "Salario e contratto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Salario e contratto"
   },
   {
    "slug": "parole-parole-parole",
@@ -1194,7 +1276,9 @@
    ],
    "temi": [
     "Organici e carichi di lavoro"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Organici e carichi di lavoro"
   },
   {
    "slug": "essere-infermiera",
@@ -1222,7 +1306,9 @@
    ],
    "temi": [
     "Pandemia"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Pandemia"
   },
   {
    "slug": "assemblea-obbligo-vaccinale",
@@ -1251,7 +1337,9 @@
    "temi": [
     "Pandemia",
     "Repressione e licenziamenti"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Pandemia"
   },
   {
    "slug": "workers-memorial-day",
@@ -1277,7 +1365,9 @@
    "luoghi": [],
    "temi": [
     "Salute e sicurezza sul lavoro"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Salute e sicurezza sul lavoro"
   },
   {
    "slug": "obbligo-vaccinale-difesa",
@@ -1305,7 +1395,9 @@
    "temi": [
     "Pandemia",
     "Repressione e licenziamenti"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Pandemia"
   },
   {
    "slug": "patto-innovazione-brunetta",
@@ -1332,7 +1424,9 @@
    ],
    "temi": [
     "Salario e contratto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Salario e contratto"
   },
   {
    "slug": "si-vaccini-no-decreto",
@@ -1360,7 +1454,9 @@
    ],
    "temi": [
     "Pandemia"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Pandemia"
   },
   {
    "slug": "maria-antonietta-vaccini",
@@ -1389,7 +1485,9 @@
    "temi": [
     "Pandemia",
     "Diritto alla salute"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Pandemia"
   },
   {
    "slug": "tempo-rubato",
@@ -1417,7 +1515,9 @@
    ],
    "temi": [
     "Privatizzazione e profitto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Privatizzazione e profitto"
   },
   {
    "slug": "sciopero-29-gennaio",
@@ -1448,7 +1548,9 @@
     "Lotte, scioperi, vertenze",
     "Pandemia",
     "Organici e carichi di lavoro"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Lotte, scioperi, vertenze"
   },
   {
    "slug": "assemblea-6-dicembre",
@@ -1473,7 +1575,9 @@
    "luoghi": [],
    "temi": [
     "Rappresentanza e RSU"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Rappresentanza e RSU"
   },
   {
    "slug": "agitazione-san-raffaele-2020",
@@ -1505,7 +1609,9 @@
     "Lotte, scioperi, vertenze",
     "Privatizzazione e profitto",
     "Salario e contratto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Lotte, scioperi, vertenze"
   },
   {
    "slug": "mandati-al-macello",
@@ -1534,7 +1640,9 @@
    "temi": [
     "Pandemia",
     "Salute e sicurezza sul lavoro"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Pandemia"
   },
   {
    "slug": "patto-per-la-salute",
@@ -1570,7 +1678,9 @@
    ],
    "temi": [
     "Privatizzazione e profitto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Privatizzazione e profitto"
   },
   {
    "slug": "peppe-policlinico",
@@ -1600,7 +1710,9 @@
    "temi": [
     "Repressione e licenziamenti",
     "Lotte, scioperi, vertenze"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Repressione e licenziamenti"
   },
   {
    "slug": "avanti-savoia",
@@ -1629,7 +1741,9 @@
    ],
    "temi": [
     "Privatizzazione e profitto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Privatizzazione e profitto"
   },
   {
    "slug": "oss-firme-riconoscimento",
@@ -1657,7 +1771,9 @@
    ],
    "temi": [
     "Professionalità e formazione"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Professionalità e formazione"
   },
   {
    "slug": "professionalita-leggenda",
@@ -1686,7 +1802,9 @@
    "temi": [
     "Professionalità e formazione",
     "Salario e contratto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Professionalità e formazione"
   },
   {
    "slug": "professionalita-reddito",
@@ -1715,7 +1833,9 @@
    "temi": [
     "Professionalità e formazione",
     "Salario e contratto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Professionalità e formazione"
   },
   {
    "slug": "banditi-a-milano",
@@ -1745,7 +1865,9 @@
    ],
    "temi": [
     "Privatizzazione e profitto"
-   ]
+   ],
+   "copertina": "generata",
+   "stile": "Privatizzazione e profitto"
   }
  ],
  "enti": {
@@ -1876,5 +1998,74 @@
    "mancanti": [],
    "citazioni": []
   }
+ },
+ "stili": {
+  "Privatizzazione e profitto": {
+   "colore": "#8A1538",
+   "icona": "banknote"
+  },
+  "Salario e contratto": {
+   "colore": "#1B4965",
+   "icona": "file-signature"
+  },
+  "Organici e carichi di lavoro": {
+   "colore": "#5B4B8A",
+   "icona": "users"
+  },
+  "Salute e sicurezza sul lavoro": {
+   "colore": "#9A5B00",
+   "icona": "hard-hat"
+  },
+  "Repressione e licenziamenti": {
+   "colore": "#A4161A",
+   "icona": "gavel"
+  },
+  "Rappresentanza e RSU": {
+   "colore": "#2A6F4E",
+   "icona": "vote"
+  },
+  "Diritto alla salute": {
+   "colore": "#0F766E",
+   "icona": "heart-pulse"
+  },
+  "Pandemia": {
+   "colore": "#4A5568",
+   "icona": "syringe"
+  },
+  "Lotte, scioperi, vertenze": {
+   "colore": "#B4530A",
+   "icona": "megaphone"
+  },
+  "Professionalità e formazione": {
+   "colore": "#3C6E71",
+   "icona": "graduation-cap"
+  },
+  "Guerra": {
+   "colore": "#3A3042",
+   "icona": "shield-alert"
+  },
+  "Come funziona altrove": {
+   "colore": "#1D3557",
+   "icona": "globe"
+  },
+  "_neutro": {
+   "colore": "#2B2F36",
+   "icona": "file-text"
+  }
+ },
+ "icone": {
+  "banknote": "<rect width=\"20\" height=\"12\" x=\"2\" y=\"6\" rx=\"2\" /> <circle cx=\"12\" cy=\"12\" r=\"2\" /> <path d=\"M6 12h.01M18 12h.01\" />",
+  "file-signature": "<path d=\"m18 5-2.414-2.414A2 2 0 0 0 14.172 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2\" /> <path d=\"M21.378 12.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z\" /> <path d=\"M8 18h1\" />",
+  "users": "<path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\" /> <path d=\"M16 3.128a4 4 0 0 1 0 7.744\" /> <path d=\"M22 21v-2a4 4 0 0 0-3-3.87\" /> <circle cx=\"9\" cy=\"7\" r=\"4\" />",
+  "hard-hat": "<path d=\"M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5\" /> <path d=\"M14 6a6 6 0 0 1 6 6v3\" /> <path d=\"M4 15v-3a6 6 0 0 1 6-6\" /> <rect x=\"2\" y=\"15\" width=\"20\" height=\"4\" rx=\"1\" />",
+  "gavel": "<path d=\"m14 13-8.381 8.38a1 1 0 0 1-3.001-3l8.384-8.381\" /> <path d=\"m16 16 6-6\" /> <path d=\"m21.5 10.5-8-8\" /> <path d=\"m8 8 6-6\" /> <path d=\"m8.5 7.5 8 8\" />",
+  "vote": "<path d=\"m9 12 2 2 4-4\" /> <path d=\"M5 7c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v12H5V7Z\" /> <path d=\"M22 19H2\" />",
+  "heart-pulse": "<path d=\"M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5\" /> <path d=\"M3.22 13H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27\" />",
+  "syringe": "<path d=\"m18 2 4 4\" /> <path d=\"m17 7 3-3\" /> <path d=\"M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5\" /> <path d=\"m9 11 4 4\" /> <path d=\"m5 19-3 3\" /> <path d=\"m14 4 6 6\" />",
+  "megaphone": "<path d=\"M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z\" /> <path d=\"M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14\" /> <path d=\"M8 6v8\" />",
+  "graduation-cap": "<path d=\"M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z\" /> <path d=\"M22 10v6\" /> <path d=\"M6 12.5V16a6 3 0 0 0 12 0v-3.5\" />",
+  "shield-alert": "<path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\" /> <path d=\"M12 8v4\" /> <path d=\"M12 16h.01\" />",
+  "globe": "<circle cx=\"12\" cy=\"12\" r=\"10\" /> <path d=\"M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20\" /> <path d=\"M2 12h20\" />",
+  "file-text": "<path d=\"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z\" /> <path d=\"M14 2v4a2 2 0 0 0 2 2h4\" /> <path d=\"M10 9H8\" /> <path d=\"M16 13H8\" /> <path d=\"M16 17H8\" />"
  }
 }
