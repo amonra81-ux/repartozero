@@ -32,7 +32,7 @@ const stato = { settore: '', comparto: '', tipo: '', tema: '', q: '',
 
 // i dati cambiano insieme al codice: la versione evita che il browser
 // serva un archivio vecchio tenuto in cache
-const VERSIONE = '18';
+const VERSIONE = '19';
 
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -458,16 +458,23 @@ function disegnaPagine(pagine) {
 
 
 /* ---------- lettore ----------
-   Una pagina A4 larga 336px non si legge: il corpo viene alto 4 pixel.
-   Su telefono si legge il TESTO, che si adatta alla larghezza; la
-   scansione originale resta a un tocco.
+   Il testo esce dal PDF gia con la sua gerarchia: il titolo di un volantino
+   e a 48-54px, il corpo a 18px. Qui si rispetta (regola visual-hierarchy:
+   "Establish hierarchy via size, spacing, contrast").
 
-   Due regole della skill applicate qui:
-   - image-dimension: ogni pagina dichiara le sue misure, cosi lo spazio
-     e riservato prima che l'immagine arrivi e la pagina non "zooma"
-   - loading-indicators: mentre il testo arriva si mostra un'attesa di
-     altezza fissa, non si carica mezzo documento per poi sostituirlo */
+   La scansione originale su telefono serve a poco: 58 documenti su 62 sono
+   fogli di testo, illeggibili in miniatura. Non e piu una scelta alla pari:
+   e un rimando in fondo, per i pochi con grafica e per chi vuole verificare.  */
 let vistaLettore = 'testo';
+
+const BLOCCO = {
+  intestazione: t => `<p class="d-intestazione">${esc(t)}</p>`,
+  titolo:       t => `<h3 class="d-titolo">${esc(t)}</h3>`,
+  sottotitolo:  t => `<h4 class="d-sottotitolo">${esc(t)}</h4>`,
+  rilievo:      t => `<p class="d-rilievo">${esc(t)}</p>`,
+  firma:        t => `<p class="d-firma">${esc(t)}</p>`,
+  testo:        t => `<p>${esc(t)}</p>`
+};
 
 function disegnaLettore(d) {
   const v = $('#m-viewer');
@@ -478,42 +485,42 @@ function disegnaLettore(d) {
   }
 
   const pagine = d.immagini || [], misure = d.misure || [];
-  const testo = LETTURA ? (LETTURA[d.slug] || []) : null;   // null = ancora in arrivo
+  const blocchi = LETTURA ? (LETTURA[d.slug] || []) : null;   // null = in arrivo
 
-  // il testo non c'e ancora: si aspetta, senza scaricare immagini che
-  // verrebbero buttate un attimo dopo
-  if (testo === null && vistaLettore === 'testo') {
+  if (blocchi === null && vistaLettore === 'testo') {
     v.innerHTML = `<div class="attesa" role="status">Sto aprendo il documento…</div>`;
     return;
   }
 
-  const haTesto = testo && testo.length > 0;
-  if (testo !== null && !haTesto) vistaLettore = 'originale';
-  const mostraTesto = vistaLettore === 'testo' && haTesto;
+  const haTesto = blocchi && blocchi.length > 0;
+  if (blocchi !== null && !haTesto) vistaLettore = 'originale';
 
-  const scelta = `
-    <div class="scelta-vista" role="group" aria-label="Come vedere il documento">
-      <button data-vista="testo" ${!haTesto ? 'disabled' : ''}
-              aria-pressed="${mostraTesto}">Testo</button>
-      <button data-vista="originale" aria-pressed="${!mostraTesto}">Originale</button>
-    </div>`;
+  if (vistaLettore === 'testo' && haTesto) {
+    v.innerHTML = `<article class="testo-doc">
+        ${blocchi.map(b => (BLOCCO[b.t] || BLOCCO.testo)(b.testo)).join('')}
+        <div class="vedi-originale">
+          <button data-vista="originale">Vedi la scansione originale
+            <small>${pagine.length} ${pagine.length === 1 ? 'pagina' : 'pagine'}</small></button>
+        </div>
+      </article>`;
+  } else {
+    v.innerHTML = `<div class="lettore">`
+      + (haTesto ? `<div class="torna-testo"><button data-vista="testo">← Torna al testo</button></div>` : '')
+      + pagine.map((p, i) => {
+          const [w, h] = misure[i] || [868, 1228];
+          return `<figure style="aspect-ratio:${w}/${h}">
+             <img src="${p}" width="${w}" height="${h}"
+                  alt="Pagina ${i + 1} di ${pagine.length}: ${esc(d.titolo)}"
+                  loading="${i === 0 ? 'eager' : 'lazy'}" decoding="async">
+             ${pagine.length > 1 ? `<figcaption>${i + 1} / ${pagine.length}</figcaption>` : ''}
+           </figure>`; }).join('')
+      + `</div>`;
+  }
 
-  const corpo = mostraTesto
-    ? `<article class="testo-doc">${testo.map(p => `<p>${esc(p)}</p>`).join('')}</article>`
-    : `<div class="lettore">` + pagine.map((p, i) => {
-        const [w, h] = misure[i] || [868, 1228];
-        return `<figure style="aspect-ratio:${w}/${h}">
-           <img src="${p}" width="${w}" height="${h}"
-                alt="Pagina ${i + 1} di ${pagine.length}: ${esc(d.titolo)}"
-                loading="${i === 0 ? 'eager' : 'lazy'}" decoding="async">
-           ${pagine.length > 1 ? `<figcaption>${i + 1} / ${pagine.length}</figcaption>` : ''}
-         </figure>`; }).join('') + `</div>`;
-
-  v.innerHTML = scelta + corpo;
-  v.querySelector('.scelta-vista').addEventListener('click', e => {
-    const b = e.target.closest('[data-vista]'); if (!b || b.disabled) return;
+  v.addEventListener('click', e => {
+    const b = e.target.closest('[data-vista]'); if (!b) return;
     vistaLettore = b.dataset.vista;
     disegnaLettore(d);
     v.scrollTop = 0;
-  });
+  }, { once: true });
 }

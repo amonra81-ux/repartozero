@@ -274,22 +274,37 @@ footer.site a{color:var(--paper); display:inline-block; padding:5px 0; min-heigh
 .x:hover{background:var(--red)}
 .viewer{background:#5b5b5b; min-height:52dvh; overflow:auto}
 .viewer iframe{width:100%; height:100%; min-height:70dvh; border:0; display:block}
-/* la scelta fra testo e scansione */
-.scelta-vista{position:sticky; top:0; z-index:3; display:flex; gap:2px;
-  background:var(--ink); padding:6px}
-.scelta-vista button{flex:1; min-height:40px; border:0; background:transparent;
-  color:#B9BDC4; font-family:'Space Mono',monospace; font-size:var(--t-12);
-  letter-spacing:.1em; text-transform:uppercase}
-.scelta-vista button[aria-pressed="true"]{background:var(--paper); color:var(--ink); font-weight:700}
-.scelta-vista button:disabled{opacity:.35}
-
-/* IL TESTO: si adatta alla larghezza, si legge senza ingrandire.
-   Misura della riga secondo la regola line-length-control: 35-60 caratteri. */
-.testo-doc{background:var(--paper); padding:var(--sp-5) var(--sp-4) var(--sp-8);
+/* IL TESTO: si legge senza ingrandire, e ha la gerarchia del documento vero.
+   Riga da 35-60 caratteri (regola line-length-control). */
+.testo-doc{background:var(--paper); padding:var(--sp-5) var(--sp-4) var(--sp-6);
   max-width:60ch; margin:0 auto; min-height:52dvh}
 .testo-doc p{font-size:var(--t-16); line-height:1.65; margin:0 0 var(--sp-4); color:var(--ink)}
-.testo-doc p:first-child{font-family:'Space Mono',monospace; font-size:var(--t-12);
-  color:var(--ink-3); line-height:1.5}
+
+.d-intestazione{font-family:'Space Mono',monospace; font-size:var(--t-10) !important;
+  line-height:1.5 !important; letter-spacing:.04em; color:var(--ink-3) !important;
+  border-bottom:1px solid var(--line); padding-bottom:var(--sp-3)}
+.d-titolo{font-family:'Archivo Black',sans-serif; font-size:clamp(22px,6.5vw,28px);
+  line-height:1.06; letter-spacing:-.02em; text-transform:uppercase;
+  margin:var(--sp-5) 0 var(--sp-4); color:var(--red)}
+.d-sottotitolo{font-family:'Archivo Black',sans-serif; font-size:var(--t-18);
+  line-height:1.15; margin:var(--sp-6) 0 var(--sp-3); color:var(--ink)}
+.d-rilievo{font-weight:700 !important; color:var(--ink) !important;
+  border-left:3px solid var(--red); padding-left:var(--sp-3); margin-left:-3px}
+.d-firma{font-family:'Space Mono',monospace; font-size:var(--t-12) !important;
+  color:var(--ink-3) !important; text-align:right; margin-top:var(--sp-6);
+  border-top:1px solid var(--line); padding-top:var(--sp-3)}
+
+/* la scansione: un rimando in fondo, non una scelta alla pari */
+.vedi-originale{margin-top:var(--sp-7); padding-top:var(--sp-4);
+  border-top:1px solid var(--line); text-align:center}
+.vedi-originale button{background:transparent; border:1.5px solid var(--line);
+  color:var(--ink-2); padding:12px 18px; min-height:48px; width:100%;
+  font-size:var(--t-14); border-radius:var(--radius)}
+.vedi-originale small{display:block; font-family:'Space Mono',monospace;
+  font-size:var(--t-10); color:var(--ink-3); margin-top:3px}
+.torna-testo{padding:var(--sp-2)}
+.torna-testo button{background:var(--paper); border:0; width:100%; min-height:48px;
+  font-weight:700; font-size:var(--t-14); border-radius:var(--radius)}
 
 .attesa{min-height:52dvh; display:flex; align-items:center; justify-content:center;
   background:var(--paper); color:var(--ink-3);
