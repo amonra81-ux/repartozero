@@ -205,6 +205,13 @@ mark{background:#FFE9A8; color:#14161A; padding:0 2px}
 .cop-pagina{position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
   object-position:top center}
 
+/* ---------- GUASTO ---------- */
+.guasto{grid-column:1/-1; text-align:center; padding:var(--sp-7) var(--sp-4);
+  border:1.5px dashed var(--red)}
+.guasto b{display:block; font-family:'Archivo Black',sans-serif; font-size:var(--t-18);
+  text-transform:uppercase; margin-bottom:var(--sp-4)}
+.guasto .note{margin-top:var(--sp-4)}
+
 /* ---------- MOSTRA ALTRI / VUOTO ---------- */
 .fine-elenco{padding:var(--sp-5) 0 var(--sp-8); text-align:center}
 .btn-espandi{background:transparent; border:2px solid var(--ink); color:var(--ink);
@@ -284,11 +291,16 @@ footer.site a{color:var(--paper); display:inline-block; padding:5px 0; min-heigh
 .testo-doc p:first-child{font-family:'Space Mono',monospace; font-size:var(--t-12);
   color:var(--ink-3); line-height:1.5}
 
+.attesa{min-height:52dvh; display:flex; align-items:center; justify-content:center;
+  background:var(--paper); color:var(--ink-3);
+  font-family:'Space Mono',monospace; font-size:var(--t-12); letter-spacing:.1em;
+  text-transform:uppercase}
+
 /* lettore a pagine: il documento si legge qui dentro, si scorre col dito
    e si ingrandisce con le dita come una foto */
 .lettore{background:#5b5b5b; padding:var(--sp-3); display:flex; flex-direction:column;
   gap:var(--sp-3); min-height:52dvh}
-.lettore figure{margin:0; position:relative; background:#fff}
+.lettore figure{margin:0; position:relative; background:#fff; width:100%}
 .lettore img{width:100%; height:auto; display:block}
 .lettore figcaption{position:absolute; right:6px; bottom:6px;
   background:rgba(20,22,26,.82); color:#fff; font-family:'Space Mono',monospace;

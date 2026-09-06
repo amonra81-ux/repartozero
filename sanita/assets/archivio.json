@@ -31,7 +31,13 @@
    "immagini": [
     "pagine/aggressioni-nostre-lotte-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     868,
+     1228
+    ]
+   ]
   },
   {
    "slug": "boss-san-raffaele-offesi",
@@ -67,7 +73,13 @@
    "immagini": [
     "pagine/boss-san-raffaele-offesi-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     868,
+     1228
+    ]
+   ]
   },
   {
    "slug": "rnls-brt-sedriano-assemblea",
@@ -102,7 +114,17 @@
     "pagine/rnls-brt-sedriano-assemblea-1.webp",
     "pagine/rnls-brt-sedriano-assemblea-2.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     868,
+     1228
+    ],
+    [
+     868,
+     1228
+    ]
+   ]
   },
   {
    "slug": "rnls-incendio-bovisa",
@@ -137,7 +159,17 @@
     "pagine/rnls-incendio-bovisa-1.webp",
     "pagine/rnls-incendio-bovisa-2.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     868,
+     1228
+    ],
+    [
+     868,
+     1228
+    ]
+   ]
   },
   {
    "slug": "siamo-tutti-diffidati",
@@ -171,7 +203,13 @@
    "immagini": [
     "pagine/siamo-tutti-diffidati-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     868,
+     1228
+    ]
+   ]
   },
   {
    "slug": "spesa-sanitaria-privati",
@@ -210,7 +248,13 @@
    "immagini": [
     "pagine/spesa-sanitaria-privati-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     868,
+     1228
+    ]
+   ]
   },
   {
    "slug": "caos-errori-orrori-san-raffaele",
@@ -245,7 +289,13 @@
    "immagini": [
     "pagine/caos-errori-orrori-san-raffaele-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     868,
+     1228
+    ]
+   ]
   },
   {
    "slug": "rsu-2025-aggiornamento",
@@ -280,7 +330,21 @@
     "pagine/rsu-2025-aggiornamento-2.webp",
     "pagine/rsu-2025-aggiornamento-3.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ],
+    [
+     869,
+     1228
+    ],
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "opuscolo-burnout-stress",
@@ -342,7 +406,109 @@
     "pagine/opuscolo-burnout-stress-24.webp",
     "pagine/opuscolo-burnout-stress-25.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     868,
+     1228
+    ],
+    [
+     868,
+     1228
+    ],
+    [
+     868,
+     1228
+    ],
+    [
+     868,
+     1228
+    ],
+    [
+     868,
+     1228
+    ],
+    [
+     868,
+     1228
+    ],
+    [
+     868,
+     1228
+    ],
+    [
+     868,
+     1228
+    ],
+    [
+     868,
+     1228
+    ],
+    [
+     868,
+     1228
+    ],
+    [
+     868,
+     1228
+    ],
+    [
+     868,
+     1228
+    ],
+    [
+     868,
+     1228
+    ],
+    [
+     868,
+     1228
+    ],
+    [
+     868,
+     1228
+    ],
+    [
+     868,
+     1228
+    ],
+    [
+     868,
+     1228
+    ],
+    [
+     868,
+     1228
+    ],
+    [
+     868,
+     1228
+    ],
+    [
+     868,
+     1228
+    ],
+    [
+     868,
+     1228
+    ],
+    [
+     868,
+     1228
+    ],
+    [
+     868,
+     1228
+    ],
+    [
+     868,
+     1228
+    ],
+    [
+     868,
+     1228
+    ]
+   ]
   },
   {
    "slug": "riunione-burnout-8-febbraio",
@@ -374,7 +540,13 @@
    "immagini": [
     "pagine/riunione-burnout-8-febbraio-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1229
+    ]
+   ]
   },
   {
    "slug": "mmg-legacoop",
@@ -409,7 +581,13 @@
    "immagini": [
     "pagine/mmg-legacoop-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "vertenza-ferie-retribuzione",
@@ -444,7 +622,13 @@
    "immagini": [
     "pagine/vertenza-ferie-retribuzione-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "vademecum-liste-attesa",
@@ -478,7 +662,13 @@
    "immagini": [
     "pagine/vademecum-liste-attesa-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "legge-bilancio-2024",
@@ -511,7 +701,13 @@
    "immagini": [
     "pagine/legge-bilancio-2024-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "a-piccoli-passi-abbrutimento",
@@ -547,7 +743,13 @@
    "immagini": [
     "pagine/a-piccoli-passi-abbrutimento-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "marta-va-reintegrata",
@@ -583,7 +785,13 @@
    "immagini": [
     "pagine/marta-va-reintegrata-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "mensa-adesioni-ricorso",
@@ -618,7 +826,13 @@
    "immagini": [
     "pagine/mensa-adesioni-ricorso-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "mensa-diffida-san-martino",
@@ -653,7 +867,13 @@
    "immagini": [
     "pagine/mensa-diffida-san-martino-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "mensa-verbale-riunione",
@@ -688,7 +908,13 @@
    "immagini": [
     "pagine/mensa-verbale-riunione-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "vertenza-mensa-diritto",
@@ -723,7 +949,13 @@
    "immagini": [
     "pagine/vertenza-mensa-diritto-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "sportelli-territoriali-conferenza",
@@ -758,7 +990,13 @@
    "immagini": [
     "pagine/sportelli-territoriali-conferenza-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "hospice-san-martino-como",
@@ -793,7 +1031,13 @@
    "immagini": [
     "pagine/hospice-san-martino-como-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "cera-una-volta-ssn",
@@ -827,7 +1071,13 @@
    "immagini": [
     "pagine/cera-una-volta-ssn-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "farsa-ecm",
@@ -861,7 +1111,13 @@
    "immagini": [
     "pagine/farsa-ecm-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "contratto-a-perdere",
@@ -894,7 +1150,13 @@
    "immagini": [
     "pagine/contratto-a-perdere-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "contratto-a-pochi-tanto",
@@ -926,7 +1188,13 @@
    "immagini": [
     "pagine/contratto-a-pochi-tanto-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "incontro-pubblico-impiego-22-ottobre",
@@ -960,7 +1228,13 @@
    "immagini": [
     "pagine/incontro-pubblico-impiego-22-ottobre-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "san-martino-bandiera-bianca",
@@ -996,7 +1270,13 @@
    "immagini": [
     "pagine/san-martino-bandiera-bianca-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "euro-guerra-salute",
@@ -1030,7 +1310,13 @@
    "immagini": [
     "pagine/euro-guerra-salute-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "opuscolo-contratto-unico",
@@ -1075,7 +1361,41 @@
     "pagine/opuscolo-contratto-unico-7.webp",
     "pagine/opuscolo-contratto-unico-8.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ],
+    [
+     869,
+     1228
+    ],
+    [
+     869,
+     1228
+    ],
+    [
+     869,
+     1228
+    ],
+    [
+     869,
+     1228
+    ],
+    [
+     869,
+     1228
+    ],
+    [
+     869,
+     1228
+    ],
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "profughi-ucraini-sanita",
@@ -1108,7 +1428,13 @@
    "immagini": [
     "pagine/profughi-ucraini-sanita-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "rsu-2022-genova",
@@ -1142,7 +1468,13 @@
    "immagini": [
     "pagine/rsu-2022-genova-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "per-un-contratto-unico",
@@ -1181,7 +1513,29 @@
     "pagine/per-un-contratto-unico-4.webp",
     "pagine/per-un-contratto-unico-5.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ],
+    [
+     869,
+     1228
+    ],
+    [
+     869,
+     1228
+    ],
+    [
+     869,
+     1228
+    ],
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "case-ospedali-comunita",
@@ -1217,7 +1571,13 @@
    "immagini": [
     "pagine/case-ospedali-comunita-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "pnrr-trappola-inganno",
@@ -1248,7 +1608,13 @@
    "immagini": [
     "pagine/pnrr-trappola-inganno-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "sistema-sanitario-inglese",
@@ -1281,7 +1647,17 @@
     "pagine/sistema-sanitario-inglese-1.webp",
     "pagine/sistema-sanitario-inglese-2.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     870,
+     1228
+    ],
+    [
+     870,
+     1228
+    ]
+   ]
   },
   {
    "slug": "sistema-sanitario-spagnolo",
@@ -1319,7 +1695,21 @@
     "pagine/sistema-sanitario-spagnolo-2.webp",
     "pagine/sistema-sanitario-spagnolo-3.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ],
+    [
+     869,
+     1228
+    ],
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "truffa-continua-tfr",
@@ -1352,7 +1742,13 @@
    "immagini": [
     "pagine/truffa-continua-tfr-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "asst-valle-olona",
@@ -1386,7 +1782,13 @@
    "immagini": [
     "pagine/asst-valle-olona-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "piacciono-quando-muoiono",
@@ -1422,7 +1824,13 @@
    "immagini": [
     "pagine/piacciono-quando-muoiono-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "borseggiatori-tfr",
@@ -1455,7 +1863,13 @@
    "immagini": [
     "pagine/borseggiatori-tfr-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "parole-parole-parole",
@@ -1488,7 +1902,13 @@
    "immagini": [
     "pagine/parole-parole-parole-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "essere-infermiera",
@@ -1522,7 +1942,13 @@
    "immagini": [
     "pagine/essere-infermiera-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "assemblea-obbligo-vaccinale",
@@ -1557,7 +1983,13 @@
    "immagini": [
     "pagine/assemblea-obbligo-vaccinale-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "workers-memorial-day",
@@ -1589,7 +2021,13 @@
    "immagini": [
     "pagine/workers-memorial-day-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "obbligo-vaccinale-difesa",
@@ -1623,7 +2061,13 @@
    "immagini": [
     "pagine/obbligo-vaccinale-difesa-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "patto-innovazione-brunetta",
@@ -1656,7 +2100,13 @@
    "immagini": [
     "pagine/patto-innovazione-brunetta-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "si-vaccini-no-decreto",
@@ -1690,7 +2140,13 @@
    "immagini": [
     "pagine/si-vaccini-no-decreto-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "maria-antonietta-vaccini",
@@ -1725,7 +2181,13 @@
    "immagini": [
     "pagine/maria-antonietta-vaccini-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "tempo-rubato",
@@ -1759,7 +2221,13 @@
    "immagini": [
     "pagine/tempo-rubato-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "sciopero-29-gennaio",
@@ -1796,7 +2264,13 @@
    "immagini": [
     "pagine/sciopero-29-gennaio-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "assemblea-6-dicembre",
@@ -1827,7 +2301,13 @@
    "immagini": [
     "pagine/assemblea-6-dicembre-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "agitazione-san-raffaele-2020",
@@ -1866,7 +2346,13 @@
     "pagine/agitazione-san-raffaele-2020-1.webp"
    ],
    "testo_trascritto": true,
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "mandati-al-macello",
@@ -1901,7 +2387,13 @@
    "immagini": [
     "pagine/mandati-al-macello-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     868,
+     1228
+    ]
+   ]
   },
   {
    "slug": "patto-per-la-salute",
@@ -1954,7 +2446,57 @@
     "pagine/patto-per-la-salute-11.webp",
     "pagine/patto-per-la-salute-12.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ],
+    [
+     869,
+     1228
+    ],
+    [
+     869,
+     1228
+    ],
+    [
+     869,
+     1228
+    ],
+    [
+     869,
+     1228
+    ],
+    [
+     869,
+     1228
+    ],
+    [
+     869,
+     1228
+    ],
+    [
+     869,
+     1228
+    ],
+    [
+     869,
+     1228
+    ],
+    [
+     869,
+     1228
+    ],
+    [
+     869,
+     1228
+    ],
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "peppe-policlinico",
@@ -1990,7 +2532,13 @@
    "immagini": [
     "pagine/peppe-policlinico-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     869,
+     1228
+    ]
+   ]
   },
   {
    "slug": "avanti-savoia",
@@ -2025,7 +2573,13 @@
    "immagini": [
     "pagine/avanti-savoia-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     868,
+     1228
+    ]
+   ]
   },
   {
    "slug": "oss-firme-riconoscimento",
@@ -2059,7 +2613,13 @@
    "immagini": [
     "pagine/oss-firme-riconoscimento-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     868,
+     1228
+    ]
+   ]
   },
   {
    "slug": "professionalita-leggenda",
@@ -2094,7 +2654,13 @@
    "immagini": [
     "pagine/professionalita-leggenda-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     868,
+     1228
+    ]
+   ]
   },
   {
    "slug": "professionalita-reddito",
@@ -2129,7 +2695,13 @@
    "immagini": [
     "pagine/professionalita-reddito-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     868,
+     1228
+    ]
+   ]
   },
   {
    "slug": "banditi-a-milano",
@@ -2165,7 +2737,13 @@
    "immagini": [
     "pagine/banditi-a-milano-1.webp"
    ],
-   "ha_testo": true
+   "ha_testo": true,
+   "misure": [
+    [
+     868,
+     1228
+    ]
+   ]
   }
  ],
  "enti": {

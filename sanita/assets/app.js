@@ -32,7 +32,7 @@ const stato = { settore: '', comparto: '', tipo: '', tema: '', q: '',
 
 // i dati cambiano insieme al codice: la versione evita che il browser
 // serva un archivio vecchio tenuto in cache
-const VERSIONE = '16';
+const VERSIONE = '18';
 
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -45,20 +45,42 @@ fetch('assets/archivio.json?v=' + VERSIONE)
   .then(d => {
     DATI = d.documenti; ENTI = d.enti || {};
     STILI = d.stili || {}; ICONE = d.icone || {};
-    init();
+    try { init(); }
+    catch (err) {
+      console.error('Errore durante l\'avvio della pagina:', err);
+      avviso('Qualcosa non ha funzionato nel mostrare l\'archivio.');
+      throw err;                       // resta nel registro per la diagnosi
+    }
     fetch('assets/testi.json?v=' + VERSIONE).then(r => r.json()).then(t => {
       TESTI = t;
       if (stato.q) rendi();          // la ricerca si allarga al testo appena arriva
     }).catch(() => {});
     // il testo leggibile del documento, per il lettore
     fetch('assets/lettura.json?v=' + VERSIONE).then(r => r.json())
-      .then(l => { LETTURA = l; }).catch(() => {});
+      .then(l => {
+        LETTURA = l;
+        // se stai gia leggendo un documento, il testo compare senza ricaricare
+        if (indice >= 0 && $('#overlay').classList.contains('is-open')) disegnaLettore(vista[indice]);
+      }).catch(() => {});
   })
-  .catch(() => {
-    $('#grid').innerHTML =
-      '<p style="grid-column:1/-1">Non riesco a caricare l\'archivio. Apri la cartella con ' +
-      '<code>python3 _sorgenti/serve.py</code>: col doppio clic il browser blocca la lettura dei dati.</p>';
+  .catch(err => {
+    console.error('Archivio non caricato:', err);
+    avviso(location.protocol === 'file:'
+      ? 'I dati non si leggono aprendo il file con un doppio clic. Serve un server: python3 _sorgenti/serve.py'
+      : 'Non riesco a caricare l\'archivio in questo momento.');
   });
+
+// un guasto non lascia la pagina muta: dice cosa e successo e come riprovare
+function avviso(testo) {
+  const g = $('#grid'); if (!g) return;
+  g.innerHTML = `<div class="guasto">
+      <b>${esc(testo)}</b>
+      <button class="btn-red" onclick="location.reload()">Riprova</button>
+      <p class="note">Se continua, scrivi a <a href="mailto:milano@sicobas.org">milano@sicobas.org</a>.</p>
+    </div>`;
+  const s = $('#sfoglia'); if (s) s.hidden = true;
+  const p = $('#pagine'); if (p) p.hidden = true;
+}
 
 function init() {
   const anni = DATI.map(d => +d.data.slice(0, 4));
@@ -394,9 +416,14 @@ function trappolaFocus(e) {
 
 function apriDaURL() {
   const m = location.hash.match(/doc=([\w-]+)/); if (!m) return;
+  if (!DATI.some(d => d.slug === m[1])) return;
+  // il documento puo stare oltre i cinque della vetrina: si passa allo
+  // sfoglio e si va alla pagina che lo contiene
+  stato.sfoglia = true; stato.pagina = 1; rendi();
   const i = vista.findIndex(d => d.slug === m[1]);
   if (i < 0) return;
-  if (i >= mostrati) { mostrati = i + 1; rendi(); }
+  stato.pagina = Math.floor(i / PER_PAGINA) + 1;
+  rendi();
   apri(i);
 }
 
@@ -433,38 +460,54 @@ function disegnaPagine(pagine) {
 /* ---------- lettore ----------
    Una pagina A4 larga 336px non si legge: il corpo viene alto 4 pixel.
    Su telefono si legge il TESTO, che si adatta alla larghezza; la
-   scansione originale resta a un tocco. Sullo schermo largo il PDF
-   vero e leggibile e resta quello. */
+   scansione originale resta a un tocco.
+
+   Due regole della skill applicate qui:
+   - image-dimension: ogni pagina dichiara le sue misure, cosi lo spazio
+     e riservato prima che l'immagine arrivi e la pagina non "zooma"
+   - loading-indicators: mentre il testo arriva si mostra un'attesa di
+     altezza fissa, non si carica mezzo documento per poi sostituirlo */
 let vistaLettore = 'testo';
 
 function disegnaLettore(d) {
-  const stretto = window.matchMedia('(max-width: 820px)').matches;
   const v = $('#m-viewer');
 
-  if (!stretto) {
+  if (!window.matchMedia('(max-width: 820px)').matches) {
     v.innerHTML = `<iframe src="${d.pdf}#view=FitH&toolbar=1" title="Documento: ${esc(d.titolo)}" loading="lazy"></iframe>`;
     return;
   }
 
-  const testo = (LETTURA && LETTURA[d.slug]) || [];
-  const pagine = d.immagini || [];
-  if (!testo.length) vistaLettore = 'originale';
+  const pagine = d.immagini || [], misure = d.misure || [];
+  const testo = LETTURA ? (LETTURA[d.slug] || []) : null;   // null = ancora in arrivo
+
+  // il testo non c'e ancora: si aspetta, senza scaricare immagini che
+  // verrebbero buttate un attimo dopo
+  if (testo === null && vistaLettore === 'testo') {
+    v.innerHTML = `<div class="attesa" role="status">Sto aprendo il documento…</div>`;
+    return;
+  }
+
+  const haTesto = testo && testo.length > 0;
+  if (testo !== null && !haTesto) vistaLettore = 'originale';
+  const mostraTesto = vistaLettore === 'testo' && haTesto;
 
   const scelta = `
     <div class="scelta-vista" role="group" aria-label="Come vedere il documento">
-      <button data-vista="testo" ${!testo.length ? 'disabled' : ''}
-              aria-pressed="${vistaLettore === 'testo'}">Testo</button>
-      <button data-vista="originale" aria-pressed="${vistaLettore === 'originale'}">Originale</button>
+      <button data-vista="testo" ${!haTesto ? 'disabled' : ''}
+              aria-pressed="${mostraTesto}">Testo</button>
+      <button data-vista="originale" aria-pressed="${!mostraTesto}">Originale</button>
     </div>`;
 
-  const corpo = vistaLettore === 'testo' && testo.length
+  const corpo = mostraTesto
     ? `<article class="testo-doc">${testo.map(p => `<p>${esc(p)}</p>`).join('')}</article>`
-    : `<div class="lettore">` + pagine.map((p, i) => `
-         <figure>
-           <img src="${p}" alt="Pagina ${i + 1} di ${pagine.length}: ${esc(d.titolo)}"
+    : `<div class="lettore">` + pagine.map((p, i) => {
+        const [w, h] = misure[i] || [868, 1228];
+        return `<figure style="aspect-ratio:${w}/${h}">
+           <img src="${p}" width="${w}" height="${h}"
+                alt="Pagina ${i + 1} di ${pagine.length}: ${esc(d.titolo)}"
                 loading="${i === 0 ? 'eager' : 'lazy'}" decoding="async">
            ${pagine.length > 1 ? `<figcaption>${i + 1} / ${pagine.length}</figcaption>` : ''}
-         </figure>`).join('') + `</div>`;
+         </figure>`; }).join('') + `</div>`;
 
   v.innerHTML = scelta + corpo;
   v.querySelector('.scelta-vista').addEventListener('click', e => {
