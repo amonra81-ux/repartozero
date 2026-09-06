@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<link rel="stylesheet" href="assets/style.css?v=13">
+<link rel="stylesheet" href="assets/style.css?v=14">
 </head>
 <body id="top">
 
@@ -21,7 +21,7 @@
     <nav class="topnav">
       <a href="#documenti">Documenti</a>
       <a href="#enti">Ospedali</a>
-      <a href="#modello">Il modello</a>
+      <a href="#modello" class="secondaria">Il modello</a>
     </nav>
   </div>
 </header>
@@ -59,7 +59,12 @@
       Filtri <span class="conta" id="conta-filtri" hidden>0</span>
     </button>
 
-    <div class="pannello" id="pannello">
+    <div class="velo" id="velo"></div>
+    <div class="pannello" id="pannello" role="dialog" aria-label="Filtri">
+      <div class="pannello-titolo">
+        <h2>Filtri</h2>
+        <button class="chiudi-pannello" id="chiudi-pannello" aria-label="Chiudi i filtri">✕</button>
+      </div>
 
     <div class="suggeriti" id="suggeriti" aria-label="Ricerche rapide">
       <span>Prova:</span>
@@ -178,6 +183,6 @@
   </div>
 </div>
 
-<script src="assets/app.js?v=13"></script>
+<script src="assets/app.js?v=14"></script>
 </body>
 </html>

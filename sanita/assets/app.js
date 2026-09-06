@@ -32,7 +32,7 @@ const stato = { settore: '', comparto: '', tipo: '', tema: '', q: '',
 
 // i dati cambiano insieme al codice: la versione evita che il browser
 // serva un archivio vecchio tenuto in cache
-const VERSIONE = '13';
+const VERSIONE = '14';
 
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -112,11 +112,19 @@ function init() {
   });
 
   // su telefono i filtri si aprono quando servono
-  $('#apri-filtri').addEventListener('click', e => {
-    const b = e.currentTarget;
-    const aperto = b.getAttribute('aria-expanded') === 'true';
-    b.setAttribute('aria-expanded', String(!aperto));
-    $('#pannello').classList.toggle('aperto', !aperto);
+  const pannello = (apri) => {
+    $('#apri-filtri').setAttribute('aria-expanded', String(apri));
+    $('#pannello').classList.toggle('aperto', apri);
+    $('#velo').classList.toggle('aperto', apri);
+    document.body.style.overflow = apri ? 'hidden' : '';
+    if (apri) $('#chiudi-pannello').focus(); else $('#apri-filtri').focus();
+  };
+  $('#apri-filtri').addEventListener('click', e =>
+    pannello(e.currentTarget.getAttribute('aria-expanded') !== 'true'));
+  $('#chiudi-pannello').addEventListener('click', () => pannello(false));
+  $('#velo').addEventListener('click', () => pannello(false));
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && $('#pannello').classList.contains('aperto')) pannello(false);
   });
 
   $('#azzera').addEventListener('click', azzera);
@@ -276,7 +284,7 @@ function copertina(d) {
   const icona = ICONE[st.icona] || '';
   return `
     <img class="cop-pagina" src="${d.thumb}" alt="Prima pagina di: ${esc(d.titolo)}" loading="lazy" decoding="async">
-    <span class="cop" style="--cop:${st.colore}">
+    <span class="cop">
       <span class="cop-riga">
         <svg class="cop-icona" viewBox="0 0 24 24" fill="none" stroke="currentColor"
              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${icona}</svg>
@@ -287,13 +295,15 @@ function copertina(d) {
 }
 
 function scheda(d) {
-  return `<button class="card" type="button" aria-label="Apri: ${esc(d.titolo)}">
+  const st = STILI[d.stile] || STILI._neutro || { colore: '#2B2F36' };
+  return `<button class="card" type="button" style="--cop:${st.colore}" aria-label="Apri: ${esc(d.titolo)}">
     <span class="thumb">
       <span class="badge ${d.tipo}">${TIPI[d.tipo]}</span>
       <span class="pagebadge">${d.pagine} ${d.pagine === 1 ? 'pag' : 'pagg'}</span>
       ${copertina(d)}
     </span>
     <span class="meta">
+      <span class="etichetta">${esc(d.etichetta)}</span>
       <span class="data">${dataBreve(d)}</span>
       ${d._dove === 'testo'
         ? `<span class="estratto"><b>nel testo</b> ${estratto(d.slug, stato.q)}</span>`
