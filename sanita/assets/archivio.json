@@ -2002,55 +2002,68 @@
  "stili": {
   "Privatizzazione e profitto": {
    "colore": "#8A1538",
-   "icona": "banknote"
+   "icona": "banknote",
+   "breve": "Privatizzazione"
   },
   "Salario e contratto": {
    "colore": "#1B4965",
-   "icona": "file-signature"
+   "icona": "file-signature",
+   "breve": "Salario e contratto"
   },
   "Organici e carichi di lavoro": {
    "colore": "#5B4B8A",
-   "icona": "users"
+   "icona": "users",
+   "breve": "Organici"
   },
   "Salute e sicurezza sul lavoro": {
    "colore": "#9A5B00",
-   "icona": "hard-hat"
+   "icona": "hard-hat",
+   "breve": "Salute e sicurezza"
   },
   "Repressione e licenziamenti": {
    "colore": "#A4161A",
-   "icona": "gavel"
+   "icona": "gavel",
+   "breve": "Repressione"
   },
   "Rappresentanza e RSU": {
    "colore": "#2A6F4E",
-   "icona": "vote"
+   "icona": "vote",
+   "breve": "Rappresentanza"
   },
   "Diritto alla salute": {
    "colore": "#0F766E",
-   "icona": "heart-pulse"
+   "icona": "heart-pulse",
+   "breve": "Diritto alla salute"
   },
   "Pandemia": {
    "colore": "#4A5568",
-   "icona": "syringe"
+   "icona": "syringe",
+   "breve": "Pandemia"
   },
   "Lotte, scioperi, vertenze": {
    "colore": "#B4530A",
-   "icona": "megaphone"
+   "icona": "megaphone",
+   "breve": "Lotte e vertenze"
   },
   "Professionalità e formazione": {
    "colore": "#3C6E71",
-   "icona": "graduation-cap"
+   "icona": "graduation-cap",
+   "breve": "Professionalità"
   },
   "Guerra": {
    "colore": "#3A3042",
-   "icona": "shield-alert"
+   "icona": "shield-alert",
+   "breve": "Guerra"
   },
   "Come funziona altrove": {
    "colore": "#1D3557",
-   "icona": "globe"
+   "icona": "globe",
+   "breve": "Altri paesi"
   },
   "_neutro": {
    "colore": "#2B2F36",
-   "icona": "file-text"
+   "icona": "file-text",
+   "breve": "Documento"
   }
  },
  "icone": {

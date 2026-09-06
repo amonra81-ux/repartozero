@@ -121,6 +121,9 @@ mark{background:#FFE9A8; color:#14161A; padding:0 2px}
 .azzera:disabled{background:transparent; color:var(--ink-3);
   border:1.5px solid var(--line); cursor:default}
 
+.apri-filtri{display:none}
+.pannello{display:contents}
+
 /* ---------- TESTATE DI SEZIONE ---------- */
 .testata-sezione{display:flex; align-items:baseline; gap:var(--sp-4); flex-wrap:wrap;
   padding:var(--sp-6) 0 var(--sp-4); border-bottom:2px solid var(--ink); margin-bottom:var(--sp-5)}
@@ -154,7 +157,11 @@ mark{background:#FFE9A8; color:#14161A; padding:0 2px}
 .pagebadge{position:absolute; bottom:8px; right:8px; z-index:2; font-family:'Space Mono',monospace;
   font-size:9.5px; background:rgba(20,22,26,.82); color:#fff; padding:3px 6px; border-radius:2px}
 .card .meta{padding:10px 10px var(--sp-3); display:flex; flex-direction:column; gap:4px; flex:1}
-.card .meta:has(.data:first-child){flex-direction:row; align-items:baseline; justify-content:space-between; gap:var(--sp-3)}
+.card .meta:has(.data:first-child){flex-direction:row; align-items:baseline;
+  justify-content:space-between; gap:var(--sp-2); min-height:34px; flex-wrap:nowrap}
+.card .meta:has(.data:first-child) .data{white-space:nowrap}
+.card .meta:has(.data:first-child) .cassetto{white-space:nowrap; overflow:hidden;
+  text-overflow:ellipsis; max-width:52%; text-align:right}
 .card .etichetta{font-family:'Archivo Black',sans-serif; font-size:15.5px; line-height:1.14;
   text-transform:uppercase; letter-spacing:-.015em; min-height:2.28em;
   display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden}
@@ -166,27 +173,38 @@ mark{background:#FFE9A8; color:#14161A; padding:0 2px}
 .estratto b{font-family:'Space Mono',monospace; font-size:9.5px; letter-spacing:.1em;
   text-transform:uppercase; color:var(--red); display:block; margin-bottom:3px}
 
-/* ---------- COPERTINE GENERATE ----------
-   58 documenti su 62 sono fogli di testo: da lontano sono tutti uguali.
-   Colore del tema + icona + titolo dentro l'immagine.
-   La pagina vera ricompare passandoci sopra. */
-.cop{position:absolute; inset:0; background:var(--cop); color:#fff;
+/* ---------- COPERTINE ----------
+   58 documenti su 62 sono fogli di testo: da lontano tutti uguali.
+   L'anteprima vera resta visibile; sopra ci va una fascia col colore del
+   tema, l'icona e il titolo. Passandoci sopra la fascia si alza. */
+.cop{position:absolute; inset:0; color:#fff; overflow:hidden;
   display:flex; flex-direction:column; justify-content:flex-end;
-  padding:var(--sp-4); overflow:hidden; transition:opacity var(--t)}
-.cop::after{content:''; position:absolute; inset:0;
-  background:linear-gradient(160deg, rgba(255,255,255,.14), rgba(0,0,0,.22))}
-.cop-icona{position:absolute; right:-14%; top:-6%; width:72%; height:auto;
-  opacity:.20; color:#fff; stroke-width:1.1}
+  padding:var(--sp-3) var(--sp-3) 44px;   /* in basso resta libero il contatore pagine */
+  background:
+    linear-gradient(to bottom,
+      transparent 0%, transparent 26%,
+      color-mix(in srgb, var(--cop) 88%, transparent) 46%,
+      var(--cop) 58%, var(--cop) 100%),
+    linear-gradient(color-mix(in srgb, var(--cop) 18%, transparent),
+                    color-mix(in srgb, var(--cop) 18%, transparent));
+  transition:opacity var(--t)}
+.cop-icona{position:absolute; right:-10%; top:2%; width:56%; height:auto;
+  opacity:.26; color:#fff; stroke-width:1.2}
 .cop-testo{position:relative; z-index:1; font-family:'Archivo Black',sans-serif;
-  font-size:clamp(17px,1.5vw,23px); line-height:1.04; letter-spacing:-.02em;
-  text-transform:uppercase; text-wrap:balance}
+  font-size:clamp(14px,1.15vw,20px); line-height:1.06; letter-spacing:-.025em;
+  text-transform:uppercase;
+  /* le parole lunghe si spezzano invece di uscire dalla copertina */
+  overflow-wrap:anywhere; hyphens:auto;
+  display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;
+  text-shadow:0 1px 10px rgba(0,0,0,.28)}
 .cop-tema{position:relative; z-index:1; margin-top:8px; font-family:'Space Mono',monospace;
-  font-size:9.5px; letter-spacing:.12em; text-transform:uppercase; opacity:.82;
-  border-top:1px solid rgba(255,255,255,.35); padding-top:7px}
+  font-size:9.5px; letter-spacing:.1em; text-transform:uppercase; opacity:.85;
+  border-top:1px solid rgba(255,255,255,.38); padding-top:7px;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+/* l'anteprima della pagina sta sotto e si vede sempre */
 .cop-pagina{position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
-  object-position:top center; opacity:0; transition:opacity var(--t)}
+  object-position:top center}
 .card:hover .cop{opacity:0}
-.card:hover .cop-pagina{opacity:1}
 
 /* ---------- MOSTRA ALTRI / VUOTO ---------- */
 .fine-elenco{padding:var(--sp-5) 0 var(--sp-8); text-align:center}
@@ -367,32 +385,65 @@ footer.site a{color:var(--paper)}
 }
 
 @media (max-width:760px){
-  /* l'intestazione resta su una riga sola */
+  /* ============ TELEFONO ============
+     Non e il sito grande rimpicciolito: la ricerca sta sempre in alto,
+     i filtri si aprono solo quando servono, il resto lascia spazio ai documenti. */
+
   .topbar .wrap{gap:var(--sp-3)}
   .brand{font-size:13px; line-height:1.05; white-space:nowrap}
   .brand br{display:none}
-  .brand b{display:none}          /* il sottotitolo lo dice gia il titolo qui sotto */
+  .brand b{display:none}
   .topnav{gap:var(--sp-3); flex-wrap:nowrap; overflow-x:auto;
     scrollbar-width:none; -webkit-overflow-scrolling:touch}
   .topnav::-webkit-scrollbar{display:none}
   .topnav a{font-size:11px; white-space:nowrap}
 
-  .apertura{padding:var(--sp-5) 0 var(--sp-4)}
-  .riga-numeri{font-size:11px}
+  /* apertura ridotta all'osso: titolo e numeri, il resto e ingombro */
+  .apertura{padding:var(--sp-4) 0 var(--sp-3)}
+  .apertura h1{font-size:clamp(26px,8.5vw,34px); margin-bottom:var(--sp-2)}
+  .apertura .lead{display:none}
+  .riga-numeri{margin-top:var(--sp-2); font-size:11px}
 
-  .barra{padding:var(--sp-3) 0}
-  .cerca{min-height:52px; padding:0 var(--sp-3)}
+  /* la barra che si incolla in alto contiene solo ricerca + bottone filtri */
+  .barra{padding:var(--sp-2) 0 var(--sp-3)}
+  .barra .wrap{display:grid; grid-template-columns:1fr auto; gap:var(--sp-2)}
+  .cerca{min-height:50px; padding:0 var(--sp-3)}
   .cerca kbd{display:none}
-  /* le ricerche rapide scorrono di lato invece di occupare tre righe */
-  .suggeriti{flex-wrap:nowrap; overflow-x:auto; scrollbar-width:none; padding-bottom:4px}
+
+  .apri-filtri{display:flex; align-items:center; gap:6px; white-space:nowrap;
+    background:var(--ink); color:var(--paper); border:0; border-radius:var(--radius);
+    min-height:50px; padding:0 var(--sp-4); font-weight:700; font-size:14px}
+  .apri-filtri .conta{background:var(--red); color:#fff; border-radius:999px;
+    min-width:20px; height:20px; display:inline-flex; align-items:center;
+    justify-content:center; font-size:11.5px; font-family:'Space Mono',monospace}
+  .apri-filtri[aria-expanded="true"]{background:var(--red)}
+
+  /* il pannello dei filtri: chiuso di default, si apre sotto la ricerca */
+  .pannello{display:none; grid-column:1 / -1}
+  .pannello.aperto{display:block}
+  .suggeriti{margin-top:0; margin-bottom:var(--sp-3);
+    flex-wrap:nowrap; overflow-x:auto; scrollbar-width:none; padding-bottom:4px}
   .suggeriti::-webkit-scrollbar{display:none}
   .suggeriti > *{flex:none; white-space:nowrap}
-  /* due tendine per riga: si vedono tutte senza scorrere */
-  .tendine{display:grid; grid-template-columns:1fr 1fr; gap:var(--sp-2); margin-top:var(--sp-3)}
-  .tendina select{min-width:0; max-width:none; width:100%; font-size:14px}
-  .azzera{grid-column:1 / -1}
+  .tendine{display:grid; grid-template-columns:1fr 1fr; gap:var(--sp-2); margin-top:0}
+  .tendina select{min-width:0; max-width:none; width:100%; font-size:14px; min-height:48px}
+  .azzera{grid-column:1 / -1; min-height:48px}
 
-  .testata-sezione{padding:var(--sp-5) 0 var(--sp-3); gap:var(--sp-2)}
+  .testata-sezione{padding:var(--sp-4) 0 var(--sp-2); gap:var(--sp-2)}
+  .testata-sezione h2{font-size:26px}
+
+  /* due copertine per riga, titolo leggibile */
+  .grid{grid-template-columns:1fr 1fr; gap:var(--sp-3)}
+  .cop{padding:var(--sp-2) var(--sp-2) 40px}
+  .cop-testo{font-size:15px}
+  .card .meta{padding:8px}
+
+  .fine-elenco{padding:var(--sp-4) 0 var(--sp-6)}
+  .btn-espandi{width:100%; padding:16px}
+  .pag-num,.pag-freccia{min-width:48px; min-height:48px}
+
+  .enti-grid{grid-template-columns:1fr}
+  .howto-grid{gap:var(--sp-4)}
 }
 
 @media (prefers-reduced-motion:reduce){

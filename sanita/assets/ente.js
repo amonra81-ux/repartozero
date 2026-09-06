@@ -8,7 +8,7 @@ const COMPARTI = { 'pubblica':'Sanità pubblica', 'privata':'Sanità privata e a
 
 // i dati cambiano insieme al codice: la versione evita che il browser
 // serva un archivio vecchio tenuto in cache
-const VERSIONE = '9';
+const VERSIONE = '10';
 
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];

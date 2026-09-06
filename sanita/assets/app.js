@@ -32,7 +32,7 @@ const stato = { settore: '', comparto: '', tipo: '', tema: '', q: '',
 
 // i dati cambiano insieme al codice: la versione evita che il browser
 // serva un archivio vecchio tenuto in cache
-const VERSIONE = '9';
+const VERSIONE = '10';
 
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -71,10 +71,14 @@ function init() {
   $('#f-ordine').addEventListener('change', e => { stato.ordine = e.target.value; ripristinaPasso(); rendi(); });
 
   const q = $('#q');
+  let attesa;
   q.addEventListener('input', e => {
-    stato.q = senzaAccenti(e.target.value.trim());
     $('#pulisci').hidden = !e.target.value;
-    ripristinaPasso(); rendi();
+    clearTimeout(attesa);                     // non si ridisegna a ogni tasto
+    attesa = setTimeout(() => {
+      stato.q = senzaAccenti(e.target.value.trim());
+      ripristinaPasso(); rendi();
+    }, 180);
   });
   $('#pulisci').addEventListener('click', () => {
     q.value = ''; stato.q = ''; $('#pulisci').hidden = true; q.focus(); ripristinaPasso(); rendi();
@@ -105,6 +109,14 @@ function init() {
     stato.pagina = +b.dataset.pagina;
     rendi();
     $('#documenti').scrollIntoView({ block: 'start' });
+  });
+
+  // su telefono i filtri si aprono quando servono
+  $('#apri-filtri').addEventListener('click', e => {
+    const b = e.currentTarget;
+    const aperto = b.getAttribute('aria-expanded') === 'true';
+    b.setAttribute('aria-expanded', String(!aperto));
+    $('#pannello').classList.toggle('aperto', !aperto);
   });
 
   $('#azzera').addEventListener('click', azzera);
@@ -188,6 +200,11 @@ function rendi() {
   const filtrato = !!(stato.settore || stato.comparto || stato.tipo || stato.tema || stato.q);
   $('#azzera').disabled = !filtrato && !stato.sfoglia;
 
+  const attivi = [stato.settore, stato.comparto, stato.tipo, stato.tema].filter(Boolean).length;
+  const conta = $('#conta-filtri');
+  conta.hidden = attivi === 0;
+  conta.textContent = attivi;
+
   // entrando si vedono i cinque piu recenti; filtrando o sfogliando si va a pagine
   const aPagine = filtrato || stato.sfoglia;
   const perPagina = aPagine ? PER_PAGINA : VETRINA;
@@ -207,8 +224,7 @@ function rendi() {
         : `i più recenti · <b>${fetta.length}</b> di ${vista.length} in archivio`);
 
   $('#empty').hidden = vista.length > 0;
-  $('#grid').innerHTML = fetta.map(scheda).join('');
-  $$('#grid .card').forEach((c, i) => c.addEventListener('click', () => apri(da + i)));
+  disegnaSchede(fetta, da);
 
   // il bottone per passare dalla vetrina allo sfoglio
   const b = $('#sfoglia');
@@ -223,6 +239,38 @@ function dataBreve(d) {
   return MESI[+m - 1] + ' ' + a + (d.stimata ? ' <span class="q" title="data ricavata dal testo, da confermare">?</span>' : '');
 }
 
+/* Le schede vengono tenute da parte e rimesse in fila: ricostruirle a ogni
+   battuta faceva ricaricare tutte le immagini, e la pagina tremava. */
+const schedeFatte = new Map();
+
+function disegnaSchede(fetta, da) {
+  const griglia = $('#grid');
+  const pezzi = fetta.map((d, i) => {
+    let el = schedeFatte.get(d.slug);
+    if (!el) {
+      const t = document.createElement('template');
+      t.innerHTML = scheda(d).trim();
+      el = t.content.firstElementChild;
+      schedeFatte.set(d.slug, el);
+    }
+    aggiornaScheda(el, d);
+    el.onclick = () => apri(da + i);
+    return el;
+  });
+  griglia.replaceChildren(...pezzi);          // le sposta, non le ricrea
+}
+
+// cambia solo la riga sotto la data: l'estratto della ricerca
+function aggiornaScheda(el, d) {
+  const sotto = el.querySelector('.estratto, .cassetto');
+  const nuovo = d._dove === 'testo'
+    ? `<span class="estratto"><b>nel testo</b> ${estratto(d.slug, stato.q)}</span>`
+    : (d.comparto && d.comparto !== 'trasversale'
+        ? `<span class="cassetto">${COMPARTI_BREVI[d.comparto]}</span>` : '');
+  if (sotto) { if (sotto.outerHTML !== nuovo) sotto.outerHTML = nuovo || '<span class="cassetto"></span>'; }
+  else if (nuovo) el.querySelector('.meta').insertAdjacentHTML('beforeend', nuovo);
+}
+
 function copertina(d) {
   const st = STILI[d.stile] || STILI._neutro || { colore: '#2B2F36', icona: 'file-text' };
   const icona = ICONE[st.icona] || '';
@@ -231,13 +279,13 @@ function copertina(d) {
     return `<img src="${d.thumb}" alt="Prima pagina di: ${esc(d.titolo)}" loading="lazy" decoding="async">`;
   }
   return `
+    <img class="cop-pagina" src="${d.thumb}" alt="Prima pagina di: ${esc(d.titolo)}" loading="lazy" decoding="async">
     <span class="cop" style="--cop:${st.colore}">
       <svg class="cop-icona" viewBox="0 0 24 24" fill="none" stroke="currentColor"
            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${icona}</svg>
       <span class="cop-testo">${esc(d.etichetta)}</span>
-      <span class="cop-tema">${esc(d.stile === '_neutro' ? SETTORI[d.settore] : d.stile)}</span>
-    </span>
-    <img class="cop-pagina" src="${d.thumb}" alt="Prima pagina di: ${esc(d.titolo)}" loading="lazy" decoding="async">`;
+      <span class="cop-tema">${esc(st.breve || d.stile)}</span>
+    </span>`;
 }
 
 function scheda(d) {

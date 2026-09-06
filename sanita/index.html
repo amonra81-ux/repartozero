@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<link rel="stylesheet" href="assets/style.css?v=9">
+<link rel="stylesheet" href="assets/style.css?v=10">
 </head>
 <body id="top">
 
@@ -52,6 +52,13 @@
       <kbd aria-hidden="true">/</kbd>
     </label>
 
+    <!-- su telefono i filtri stanno chiusi finché non servono -->
+    <button class="apri-filtri" id="apri-filtri" aria-expanded="false" aria-controls="pannello">
+      Filtri <span class="conta" id="conta-filtri" hidden>0</span>
+    </button>
+
+    <div class="pannello" id="pannello">
+
     <div class="suggeriti" id="suggeriti" aria-label="Ricerche rapide">
       <span>Prova:</span>
       <button data-cerca="san raffaele">san raffaele</button>
@@ -81,6 +88,7 @@
         </select>
       </label>
       <button class="azzera" id="azzera" disabled>Azzera tutto</button>
+    </div>
     </div>
   </div>
 </div>
@@ -168,6 +176,6 @@
   </div>
 </div>
 
-<script src="assets/app.js?v=9"></script>
+<script src="assets/app.js?v=10"></script>
 </body>
 </html>
