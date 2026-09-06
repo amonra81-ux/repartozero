@@ -48,12 +48,19 @@ mark{background:#FFE9A8; color:#14161A; padding:0 2px}
 .wrap{width:100%; max-width:var(--maxw); margin:0 auto; padding:0 clamp(16px,2.4vw,40px)}
 .note{font-family:'Space Mono',ui-monospace,monospace; font-size:var(--t-12); color:var(--ink-3)}
 
+/* si vede solo arrivandoci con la tastiera */
+.salta{position:absolute; left:-9999px; top:0; z-index:200;
+  background:var(--red); color:#fff; padding:12px 18px; font-weight:700;
+  text-decoration:none}
+.salta:focus{left:8px; top:8px}
+
 /* ---------- INTESTAZIONE ---------- */
 .topbar{position:sticky; top:0; z-index:60; background:var(--ink); color:var(--paper);
   border-bottom:3px solid var(--red)}
 .topbar .wrap{display:flex; align-items:center; gap:var(--sp-5); min-height:var(--h-top)}
 .brand{font-family:'Archivo Black',sans-serif; letter-spacing:-.02em; font-size:var(--t-16);
-  text-transform:uppercase; text-decoration:none; line-height:1.1}
+  text-transform:uppercase; text-decoration:none; line-height:1.1;
+  display:flex; align-items:center; min-height:44px}   /* bersaglio da toccare */
 .brand b{color:var(--red)}
 .topnav{margin-left:auto; display:flex; gap:var(--sp-4)}
 .topnav a{font-family:'Space Mono',monospace; font-size:var(--t-12); letter-spacing:.08em;
@@ -240,7 +247,7 @@ mark{background:#FFE9A8; color:#14161A; padding:0 2px}
 
 footer.site{background:var(--ink); color:#CFCBC2; padding:var(--sp-6) 0; font-size:var(--t-14)}
 footer.site .wrap{display:flex; gap:var(--sp-5); flex-wrap:wrap; justify-content:space-between}
-footer.site a{color:var(--paper)}
+footer.site a{color:var(--paper); display:inline-block; padding:5px 0; min-height:24px}
 
 /* ---------- VISORE ---------- */
 .overlay{position:fixed; inset:0; z-index:100; background:rgba(10,11,13,.86);
@@ -390,7 +397,8 @@ footer.site a{color:var(--paper)}
   .topnav{gap:var(--sp-3); flex-wrap:nowrap; overflow-x:auto;
     scrollbar-width:none; -webkit-overflow-scrolling:touch}
   .topnav::-webkit-scrollbar{display:none}
-  .topnav a{font-size:var(--t-12); white-space:nowrap}
+  .topnav a{font-size:var(--t-12); white-space:nowrap;
+    min-height:44px; display:flex; align-items:center}   /* bersaglio da 44px */
 
   /* apertura ridotta all'osso: titolo e numeri, il resto e ingombro */
   .apertura{padding:var(--sp-4) 0 var(--sp-3)}
@@ -400,8 +408,8 @@ footer.site a{color:var(--paper)}
 
   /* la barra che si incolla in alto contiene solo ricerca + bottone filtri */
   .barra{padding:var(--sp-2) 0 var(--sp-3)}
-  .barra .wrap{display:grid; grid-template-columns:1fr auto; gap:var(--sp-2)}
-  .cerca{min-height:50px; padding:0 var(--sp-3)}
+  .barra .wrap{display:grid; grid-template-columns:minmax(0,1fr) auto; gap:var(--sp-2)}
+  .cerca{min-width:0; min-height:50px; padding:0 var(--sp-3)}
   .cerca kbd{display:none}
 
   .apri-filtri{display:flex; align-items:center; gap:6px; white-space:nowrap;
