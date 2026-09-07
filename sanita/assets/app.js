@@ -32,7 +32,7 @@ const stato = { settore: '', comparto: '', tipo: '', tema: '', q: '',
 
 // i dati cambiano insieme al codice: la versione evita che il browser
 // serva un archivio vecchio tenuto in cache
-const VERSIONE = '19';
+const VERSIONE = '20';
 
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -247,14 +247,14 @@ function rendi() {
   const fetta = vista.slice(da, da + perPagina);
 
   const nelTesto = stato.q ? vista.filter(d => d._dove === 'testo').length : 0;
+  // sopra la barra c'e gia il titolo DOCUMENTI: qui non si ripete la parola
   $('#conteggio').innerHTML = vista.length === 0
     ? 'nessun risultato'
     : (aPagine
-        ? `<b>${vista.length}</b> ${vista.length === 1 ? 'documento' : 'documenti'}` +
-          (stato.q ? ` per <em>${esc(stato.q)}</em>` : '') +
+        ? (stato.q ? `<b>${vista.length}</b> per <em>${esc(stato.q)}</em>` : `<b>${vista.length}</b> trovati`) +
           (nelTesto ? ` · <span class="dentro">${nelTesto} dentro il testo</span>` : '') +
           (pagine > 1 ? ` · ${da + 1}-${da + fetta.length}` : '')
-        : `i più recenti · <b>${fetta.length}</b> di ${vista.length} in archivio`);
+        : `I più recenti · <b>${fetta.length}</b> di ${vista.length}`);
 
   $('#empty').hidden = vista.length > 0;
   disegnaSchede(fetta, da);

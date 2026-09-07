@@ -133,6 +133,15 @@ mark{background:#FFE9A8; color:#14161A; padding:0 2px}
   border:1.5px solid var(--line); cursor:default}
 
 
+/* titolo di apertura dei documenti: sta SOPRA la barra di ricerca */
+.apri-documenti{padding:var(--sp-5) 0 var(--sp-3)}
+.apri-documenti h2{font-family:'Archivo Black',sans-serif;
+  font-size:clamp(30px,8vw,44px); line-height:1; letter-spacing:-.025em;
+  text-transform:uppercase; margin:0}
+.sottotesto{margin:6px 0 0; font-size:var(--t-14); color:var(--ink-3)}
+.riga-risultati{padding:var(--sp-4) 0 var(--sp-3); margin:0;
+  border-bottom:2px solid var(--ink); margin-bottom:var(--sp-4)}
+
 /* ---------- TESTATE DI SEZIONE ---------- */
 .testata-sezione{display:flex; align-items:baseline; gap:var(--sp-4); flex-wrap:wrap;
   padding:var(--sp-6) 0 var(--sp-4); border-bottom:2px solid var(--ink); margin-bottom:var(--sp-5)}
@@ -443,9 +452,8 @@ footer.site a{color:var(--paper); display:inline-block; padding:5px 0; min-heigh
 
 /* intestazione su una riga sola */
 .topbar .wrap{gap:var(--sp-3)}
-.brand{font-size:var(--t-14); white-space:nowrap}
-.brand br{display:none}
-.brand b{display:none}
+.brand{font-size:var(--t-14); white-space:nowrap; display:flex; align-items:center}
+.brand b{display:none}          /* su telefono basta il nome */
 .topnav{gap:var(--sp-3)}
 .topnav a{font-size:var(--t-12); white-space:nowrap; min-height:44px;
   display:flex; align-items:center}
@@ -525,9 +533,9 @@ footer.site a{color:var(--paper); display:inline-block; padding:5px 0; min-heigh
    DA 760px IN SU — schermo largo
    ============================================================ */
 @media (min-width:760px){
-  .brand{font-size:var(--t-16); white-space:normal}
-  .brand br{display:block}
-  .brand b{display:inline}
+  .brand{font-size:var(--t-16); flex-direction:column; align-items:flex-start;
+    justify-content:center; line-height:1.1}
+  .brand b{display:block}
   .topnav a{min-height:auto; display:inline}
   .topnav .secondaria{display:inline}
 
